@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="我的烘焙配方，收录吐司、巴斯克、面包和蛋白棒的用量与烤箱记录。">
+<meta name="theme-color" content="#482332">
+<title>我的烘焙配方</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fff9ec;
+  --card: #fffefa;
+  --ink: #302022;
+  --muted: #6c5356;
+  --plum: #482332;
+  --line: #e3d0bf;
+  --accent: #be563a;
+  --display: "Songti SC", "Noto Serif CJK SC", SimSun, Georgia, serif;
+  --body: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 var(--body); }
+.wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
+.hero { background: var(--plum); color: #fff5e7; overflow: hidden; border-bottom: .45rem solid #e2a56d; }
+.hero .wrap { padding-block: clamp(2.6rem, 7vw, 5.5rem); }
+h1, h2 { font-family: var(--display); }
+h1 { font-size: clamp(2.35rem, 7vw, 4.8rem); line-height: 1.15; letter-spacing: .025em; margin: 0 0 .7rem; }
+.hero p { margin: 0; color: #f1cfbd; }
+main { padding-block: 1.6rem 4rem; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: .8rem 1.25rem; }
+.search { flex: 1 1 18rem; }
+.search label { display: block; font-weight: 650; margin-bottom: .25rem; }
+input, button { font: inherit; }
+input { width: 100%; min-height: 2.8rem; border: 1px solid #a98e84; border-radius: .45rem; background: var(--card); color: var(--ink); padding: .4rem .75rem; }
+.filters { display: flex; flex-wrap: wrap; gap: .42rem; }
+button { min-height: 2.8rem; border: 1px solid #a98e84; border-radius: 2rem; padding: .35rem .8rem; background: transparent; color: var(--ink); cursor: pointer; }
+button[aria-pressed="true"] { background: var(--plum); border-color: var(--plum); color: white; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.count { color: var(--muted); margin: 1rem 0 .65rem; }
+.recipe { border: 1px solid var(--line); background: var(--card); border-radius: .65rem; margin: 0 0 .7rem; }
+.recipe[open] { border-color: #ae8b7b; }
+summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .3rem 1rem; align-items: center; cursor: pointer; padding: 1rem clamp(.85rem, 3vw, 1.6rem); list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; grid-column: 2; grid-row: 1 / span 3; width: .55rem; height: .55rem; transform: rotate(45deg); border-bottom: 2px solid var(--plum); border-right: 2px solid var(--plum); margin: 0 .2rem .25rem; }
+details[open] summary::after { transform: rotate(225deg); margin: .25rem .2rem 0; }
+.labels { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; font-size: .88rem; color: var(--muted); }
+.status { background: #f4e6d4; color: #623f25; border-radius: 1rem; padding: .03rem .55rem; }
+.status.planned { background: #f1e7ee; color: var(--plum); }
+h2 { grid-column: 1; font-size: clamp(1.35rem, 3vw, 1.85rem); line-height: 1.25; margin: 0; }
+.metadata { grid-column: 1; color: var(--muted); margin: .05rem 0 0; font-size: .94rem; }
+.recipe-body { border-top: 1px solid var(--line); padding: 1.25rem clamp(.85rem, 3vw, 1.6rem) 1.5rem; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2.3rem; }
+h3 { margin: 0 0 .5rem; font-size: 1.08rem; }
+h4 { margin: .85rem 0 .25rem; font-size: .95rem; color: var(--plum); }
+dl { margin: 0; }
+dl div { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: .35rem .7rem; border-bottom: 1px solid #f0e5da; padding: .24rem 0; }
+dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+ol, ul { margin: 0; padding-inline-start: 1.35rem; }
+li + li { margin-top: .4rem; }
+.note { margin: 1.05rem 0 0; padding: .7rem .85rem; border-inline-start: 3px solid #bf7956; background: #fff3e4; }
+.empty { padding: 1.2rem; border: 1px dashed #a98e84; border-radius: .65rem; }
+[hidden] { display: none !important; }
+@media (max-width: 42rem) { .columns { grid-template-columns: 1fr; } }
+@media print {
+  .toolbar, .count, .empty { display: none !important; }
+  .hero { background: white; color: black; border: none; }
+  .hero .wrap { padding: 0; }
+  .hero p { color: black; }
+  summary::after { display: none; }
+  .recipe { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>我的烘焙配方</h1>
+    <p>吐司、巴斯克和下次想烤的点心</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="toolbar" hidden>
+    <div class="search">
+      <label for="search">找配方</label>
+      <input id="search" type="search" placeholder="试试输入 黑芝麻、酸奶、波兰种" autocomplete="off">
+    </div>
+    <div class="filters" role="group" aria-label="筛选配方">
+      <button type="button" data-filter="all" aria-pressed="true">全部</button>
+      <button type="button" data-filter="bread" aria-pressed="false">面包</button>
+      <button type="button" data-filter="cake" aria-pressed="false">蛋糕</button>
+      <button type="button" data-filter="snack" aria-pressed="false">点心</button>
+      <button type="button" data-filter="planned" aria-pressed="false">待试做</button>
+    </div>
+  </div>
+  <p class="count" role="status"></p>
+  <p class="empty" hidden>没有找到配方。试试换个关键词或点「全部」。</p>
+
+  <!-- 新增配方时复制一个 details 区块，使用唯一的 id，并设置 data-category 和 data-status。 -->
+  <details class="recipe" id="black-sesame-toast" data-category="bread" data-status="baked" open>
+    <summary>
+      <div class="labels"><span>面包</span><span class="status">已试做</span></div>
+      <h2>黑芝麻山形吐司</h2>
+      <p class="metadata">波兰种＋牛奶汤种 · 2 个 450 g 吐司模 · 30 分钟</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>材料</h3>
+          <h4>波兰种</h4>
+          <dl>
+            <div><dt>高筋面粉</dt><dd>100 g</dd></div><div><dt>水</dt><dd>100 g</dd></div><div><dt>酵母</dt><dd>1 g</dd></div>
+          </dl>
+          <h4>牛奶汤种</h4>
+          <dl><div><dt>高筋面粉</dt><dd>40 g</dd></div><div><dt>牛奶</dt><dd>200 g</dd></div></dl>
+          <h4>主面团</h4>
+          <dl>
+            <div><dt>高筋面粉</dt><dd>400 g</dd></div><div><dt>蛋液</dt><dd>50 g</dd></div><div><dt>糖</dt><dd>35 g</dd></div>
+            <div><dt>奶粉</dt><dd>20 g</dd></div><div><dt>盐</dt><dd>8 g</dd></div><div><dt>酵母</dt><dd>5 g</dd></div>
+            <div><dt>黄油</dt><dd>35 g</dd></div><div><dt>牛奶</dt><dd>后加 50 g，起始量待核</dd></div>
+          </dl>
+          <h4>黑芝麻馅</h4>
+          <dl>
+            <div><dt>带糖黑芝麻酱</dt><dd>110 g</dd></div><div><dt>黑芝麻</dt><dd>50 g</dd></div><div><dt>白芝麻</dt><dd>50 g</dd></div>
+            <div><dt>蜂蜜</dt><dd>40 g</dd></div><div><dt>开心果酱</dt><dd>1 勺</dd></div><div><dt>盐</dt><dd>1 g</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>制作记录</h3>
+          <ol>
+            <li>用波兰种和牛奶汤种做主面团，总面粉 540 g。揉面用压叠手法，操作中追加 50 g 牛奶。</li>
+            <li>把馅料拌匀。整形中间松弛两次，各 30 分钟。加入芝麻馅并做成山形吐司。</li>
+            <li>原记录是「310 度烤 30 分钟」。出炉效果满意，第二天早上仍然柔软。</li>
+          </ol>
+          <p class="note">温度单位待核，按美式烤箱推测为 °F。主面团牛奶总量、每条放入的馅量及发酵时间待补。</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="recipe" id="pumpkin-whey-toast" data-category="bread" data-status="baked">
+    <summary>
+      <div class="labels"><span>面包</span><span class="status">已试做</span></div>
+      <h2>南瓜乳清吐司</h2>
+      <p class="metadata">罐装南瓜泥 · 乳清分离蛋白 · 烤温待补</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>面团材料</h3>
+          <dl>
+            <div><dt>King Arthur 高筋面粉</dt><dd>510 g</dd></div><div><dt>Revolution 乳清分离蛋白粉</dt><dd>37 g</dd></div>
+            <div><dt>Organic Valley Protein Plus 牛奶</dt><dd>150 g</dd></div><div><dt>Trader Joe’s 南瓜泥</dt><dd>250 g</dd></div>
+            <div><dt>Bob’s Red Mill 脱脂奶粉</dt><dd>20 g</dd></div><div><dt>鸡蛋</dt><dd>1 个</dd></div>
+            <div><dt>糯米粉</dt><dd>10 g</dd></div><div><dt>糖</dt><dd>40 g</dd></div><div><dt>黄油</dt><dd>45 g</dd></div>
+            <div><dt>酵母</dt><dd>6 g</dd></div><div><dt>盐</dt><dd>6 g</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>制作记录</h3>
+          <ul><li>当时使用的 37 g 乳清粉含 25 g 蛋白质。</li><li>曾讨论南瓜奶酪夹心，成品夹心用量待确认。</li></ul>
+          <p class="note">旧记录出现过「切 10 片」和「两条、每条 8 片」。分模、切片、发酵和烤箱设置待核。</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="recipe" id="fig-strawberry-basque" data-category="cake" data-status="baked">
+    <summary>
+      <div class="labels"><span>蛋糕</span><span class="status">已试做</span></div>
+      <h2>无花果草莓巴斯克</h2>
+      <p class="metadata">6 寸 · 酸奶版 · 玉米淀粉 10 g</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>材料</h3>
+          <dl>
+            <div><dt>低脂奶油奶酪</dt><dd>226 g</dd></div><div><dt>全脂酸奶</dt><dd>120 g</dd></div><div><dt>淡奶油</dt><dd>40 g</dd></div>
+            <div><dt>鸡蛋</dt><dd>2 个</dd></div><div><dt>无花果酱（Fig Butter）</dt><dd>30 g</dd></div>
+            <div><dt>草莓酱</dt><dd>2 小勺</dd></div><div><dt>玉米淀粉</dt><dd>10 g</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>制作记录</h3>
+          <ol>
+            <li>蛋糕糊用少量淡奶油和全脂酸奶调配，用无花果酱和草莓酱提供甜味。</li>
+            <li>旧总结记录为 400°F 烤 10 分钟，再以 425°F 烤 17 分钟。</li>
+            <li>放凉后冷藏至少 4 小时再切，是旧总结里的做法。</li>
+          </ol>
+          <p class="note">当时聊天提到一开始是 425°F，前 10 分钟也记过 400°F。实际调温顺序待核。</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="recipe" id="classic-basque" data-category="cake" data-status="saved">
+    <summary>
+      <div class="labels"><span>蛋糕</span><span class="status">旧配方</span></div>
+      <h2>原味六寸巴斯克</h2>
+      <p class="metadata">6 寸 · 400°F 10 分钟＋430°F 15–18 分钟</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>材料</h3>
+          <dl>
+            <div><dt>奶油奶酪</dt><dd>1 盒</dd></div><div><dt>淡奶油</dt><dd>200 g</dd></div><div><dt>鸡蛋</dt><dd>2 个</dd></div>
+            <div><dt>糖</dt><dd>40 g</dd></div><div><dt>淀粉</dt><dd>7 g</dd></div><div><dt>低筋面粉</dt><dd>5 g</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>备忘录原方</h3>
+          <p>先以 400°F 烤 10 分钟，再以 430°F 烤 15–18 分钟。</p>
+          <p class="note">奶油奶酪原方写的是「一盒」，净重待补。</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="recipe" id="sea-salt-rolls" data-category="bread" data-status="planned">
+    <summary>
+      <div class="labels"><span>面包</span><span class="status planned">待试做</span></div>
+      <h2>日式海盐牛角面包</h2>
+      <p class="metadata">8 个 · 425°F · 13–17 分钟</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>材料</h3>
+          <dl>
+            <div><dt>高筋面粉</dt><dd>220 g</dd></div><div><dt>中筋面粉</dt><dd>30 g</dd></div><div><dt>水</dt><dd>155 g</dd></div>
+            <div><dt>糖</dt><dd>12 g</dd></div><div><dt>盐</dt><dd>4 g</dd></div><div><dt>即发干酵母</dt><dd>3 g</dd></div>
+            <div><dt>黄油（面团）</dt><dd>12 g</dd></div><div><dt>有盐黄油（包馅）</dt><dd>32–40 g</dd></div><div><dt>海盐（表面）</dt><dd>少许</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>试做步骤</h3>
+          <ol>
+            <li>揉成均匀有弹性的面团，发酵后分成 8 份，松弛。</li>
+            <li>擀成长三角，从宽端包入每份 4–5 g 冰凉的黄油，卷成牛角。放在有边烤盘上做最后发酵。</li>
+            <li>撒少许海盐，预热至 425°F，烤 13–17 分钟，观察表面上色。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="recipe" id="matcha-protein-bars" data-category="snack" data-status="planned">
+    <summary>
+      <div class="labels"><span>点心</span><span class="status planned">待试做</span></div>
+      <h2>抹茶开心果蛋白棒</h2>
+      <p class="metadata">6 根 · 320°F（160°C）· 15–20 分钟</p>
+    </summary>
+    <div class="recipe-body">
+      <div class="columns">
+        <div>
+          <h3>材料</h3>
+          <dl>
+            <div><dt>乳清分离蛋白粉</dt><dd>60 g</dd></div><div><dt>燕麦粉</dt><dd>50 g</dd></div>
+            <div><dt>加糖开心果酱</dt><dd>45 g</dd></div><div><dt>蛋液</dt><dd>50 g</dd></div><div><dt>牛奶</dt><dd>50–70 g</dd></div>
+            <div><dt>抹茶粉</dt><dd>5 g</dd></div><div><dt>开心果碎</dt><dd>20 g</dd></div>
+            <div><dt>泡打粉</dt><dd>2 g</dd></div><div><dt>盐</dt><dd>1 g</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>试做步骤</h3>
+          <ol>
+            <li>把蛋液和开心果酱搅匀，加入混合好的干料，牛奶分次加。拌入开心果碎，铺平。</li>
+            <li>预热至 320°F（160°C），烤 15–20 分钟。中心刚凝固时取出，放凉切成 6 根。</li>
+          </ol>
+          <p class="note">想增加颗粒感时，可用 40 g 燕麦粉加 10 g 燕麦片。</p>
+        </div>
+      </div>
+    </div>
+  </details>
+</main>
+<script>
+const search = document.querySelector('#search');
+const filters = [...document.querySelectorAll('[data-filter]')];
+const count = document.querySelector('.count');
+const empty = document.querySelector('.empty');
+const recipes = [...document.querySelectorAll('.recipe')].map(element => ({
+  element,
+  text: element.textContent.toLocaleLowerCase().replace(/\s+/g, ''),
+}));
+let active = 'all';
+
+function updateRecipes() {
+  const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+  let visible = 0;
+  for (const { element, text } of recipes) {
+    const { category, status } = element.dataset;
+    const matchesFilter = active === 'all' || active === category || active === status;
+    element.hidden = !(matchesFilter && terms.every(term => text.includes(term)));
+    if (!element.hidden) visible += 1;
+  }
+  count.textContent = `${visible} 份配方`;
+  empty.hidden = visible > 0;
+}
+
+function openLinkedRecipe() {
+  const recipe = recipes.find(({ element }) => '#' + element.id === location.hash)?.element;
+  if (recipe) {
+    if (recipe.hidden) {
+      search.value = '';
+      filters[0].click();
+    }
+    recipe.open = true;
+    recipe.scrollIntoView({ block: 'start' });
+  }
+}
+
+for (const filter of filters) {
+  filter.addEventListener('click', () => {
+    active = filter.dataset.filter;
+    for (const button of filters) {
+      button.setAttribute('aria-pressed', String(button === filter));
+    }
+    updateRecipes();
+  });
+}
+search.addEventListener('input', updateRecipes);
+window.addEventListener('hashchange', openLinkedRecipe);
+document.querySelector('.toolbar').hidden = false;
+updateRecipes();
+openLinkedRecipe();
+</script>
+</body>
+</html>
