@@ -48,7 +48,7 @@
         { "name": { "zh": "黑芝麻", "en": "Black sesame seeds" }, "amount": "50 g" },
         { "name": { "zh": "白芝麻", "en": "White sesame seeds" }, "amount": "50 g" },
         { "name": { "zh": "蜂蜜", "en": "Honey" }, "amount": "40 g" },
-        { "name": { "zh": "开心果酱", "en": "Pistachio paste" }, "amount": "1 勺", "detail": { "zh": "原记录未注明勺的大小", "en": "Spoon size not recorded" }, "certainty": "unconfirmed" },
+        { "name": { "zh": "开心果酱", "en": "Pistachio paste" }, "amount": { "zh": "1 勺", "en": "1 spoonful" }, "detail": { "zh": "原记录未注明勺的大小", "en": "Spoon size not recorded" }, "certainty": "unconfirmed" },
         { "name": { "zh": "盐", "en": "Salt" }, "amount": "1 g" }
       ]
     }
