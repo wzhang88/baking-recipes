@@ -1,0 +1,80 @@
+{
+  "id": "black-sesame-toast",
+  "category": "bread",
+  "status": "baked",
+  "title": { "zh": "黑芝麻山形吐司", "en": "Black Sesame Mountain-Top Toast" },
+  "summary": {
+    "zh": "波兰种＋牛奶汤种 · 2 个 450 g 吐司模 · 30 分钟",
+    "en": "Poolish + milk tangzhong · two 450 g loaf pans · 30 minutes"
+  },
+  "sections": [
+    {
+      "title": { "zh": "波兰种", "en": "Poolish" },
+      "ingredients": [
+        { "name": { "zh": "高筋面粉", "en": "Bread flour" }, "amount": "100 g" },
+        { "name": { "zh": "水", "en": "Water" }, "amount": "100 g" },
+        { "name": { "zh": "酵母", "en": "Yeast" }, "amount": "1 g" }
+      ]
+    },
+    {
+      "title": { "zh": "牛奶汤种（可换烫种）", "en": "Milk tangzhong (may use a scald instead)" },
+      "ingredients": [
+        { "name": { "zh": "高筋面粉", "en": "Bread flour" }, "amount": "40 g" },
+        { "name": { "zh": "牛奶", "en": "Milk" }, "amount": "200 g" }
+      ]
+    },
+    {
+      "title": { "zh": "主面团", "en": "Main dough" },
+      "ingredients": [
+        { "name": { "zh": "高筋面粉", "en": "Bread flour" }, "amount": "400 g" },
+        { "name": { "zh": "蛋液", "en": "Beaten egg" }, "amount": "50 g" },
+        { "name": { "zh": "糖", "en": "Sugar" }, "amount": "35 g" },
+        { "name": { "zh": "奶粉", "en": "Milk powder" }, "amount": "20 g" },
+        { "name": { "zh": "盐", "en": "Salt" }, "amount": "8 g" },
+        { "name": { "zh": "酵母", "en": "Yeast" }, "amount": "5 g" },
+        { "name": { "zh": "黄油", "en": "Butter" }, "amount": "35 g" },
+        {
+          "name": { "zh": "牛奶", "en": "Milk" },
+          "amount": "50 g",
+          "detail": { "zh": "操作中后加；起始量待核", "en": "Added during mixing; initial amount unconfirmed" },
+          "certainty": "unconfirmed"
+        }
+      ]
+    },
+    {
+      "title": { "zh": "黑芝麻馅", "en": "Black sesame filling" },
+      "ingredients": [
+        { "name": { "zh": "带糖黑芝麻酱", "en": "Sweetened black sesame paste" }, "amount": "110 g" },
+        { "name": { "zh": "黑芝麻", "en": "Black sesame seeds" }, "amount": "50 g" },
+        { "name": { "zh": "白芝麻", "en": "White sesame seeds" }, "amount": "50 g" },
+        { "name": { "zh": "蜂蜜", "en": "Honey" }, "amount": "40 g" },
+        { "name": { "zh": "开心果酱", "en": "Pistachio paste" }, "amount": "1 勺", "detail": { "zh": "原记录未注明勺的大小", "en": "Spoon size not recorded" }, "certainty": "unconfirmed" },
+        { "name": { "zh": "盐", "en": "Salt" }, "amount": "1 g" }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "用波兰种和牛奶汤种做主面团，总面粉 540 g。揉面用压叠手法，操作中追加 50 g 牛奶。",
+      "en": "Make the main dough with the poolish and milk tangzhong (540 g total flour). Knead using a press-and-fold technique; add another 50 g of milk during mixing."
+    },
+    {
+      "zh": "把馅料拌匀。整形中间松弛两次，各 30 分钟。加入芝麻馅并做成山形吐司。",
+      "en": "Mix the filling. Rest the dough twice for 30 minutes each during shaping. Add the sesame filling and shape into mountain-top loaves."
+    },
+    {
+      "zh": "原记录是「310 度烤 30 分钟」。出炉效果满意，第二天早上仍然柔软。",
+      "en": "The original note says ‘bake at 310 degrees for 30 minutes.’ The result was good and still soft the next morning."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "温度单位待核，按美式烤箱推测为 °F。主面团牛奶总量、每条放入的馅量及发酵时间待补。",
+      "en": "Temperature unit unconfirmed; °F is inferred from the American oven. Total milk in the main dough, filling per loaf, and proofing times still need confirmation.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "black-sesame-toast"
+}
