@@ -24,6 +24,12 @@ body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 v
 .wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
 .hero { background: var(--plum); color: #fff5e7; overflow: hidden; border-bottom: .45rem solid #e2a56d; }
 .hero .wrap { padding-block: clamp(2.6rem, 7vw, 5.5rem); }
+.hero-top { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.language-switch { flex: none; border-color: #f1cfbd; color: #fff5e7; background: #ffffff18; }
+.language-switch:hover { background: #ffffff30; }
+.language-switch:disabled { opacity: .65; cursor: wait; }
+.language-message { min-height: 1.4em; margin-top: .5rem !important; font-size: .88rem; }
+.language-message:empty { display: none; }
 h1, h2 { font-family: var(--display); }
 h1 { font-size: clamp(2.35rem, 7vw, 4.8rem); line-height: 1.15; letter-spacing: .025em; margin: 0 0 .7rem; }
 .hero p { margin: 0; color: #f1cfbd; }
@@ -62,8 +68,9 @@ li + li { margin-top: .4rem; }
 .empty { padding: 1.2rem; border: 1px dashed #a98e84; border-radius: .65rem; }
 [hidden] { display: none !important; }
 @media (max-width: 42rem) { .columns { grid-template-columns: 1fr; } }
+@media (max-width: 25rem) { .hero-top { align-items: start; } .language-switch { padding-inline: .55rem; } }
 @media print {
-  .toolbar, .count, .empty { display: none !important; }
+  .toolbar, .count, .empty, .language-switch, .language-message { display: none !important; }
   .hero { background: white; color: black; border: none; }
   .hero .wrap { padding: 0; }
   .hero p { color: black; }
@@ -75,8 +82,11 @@ li + li { margin-top: .4rem; }
 <body>
 <header class="hero">
   <div class="wrap">
-    <h1>我的烘焙配方</h1>
-    <p>吐司、巴斯克和下次想烤的点心</p>
+    <div class="hero-top">
+      <div><h1>我的烘焙配方</h1><p id="hero-description">吐司、巴斯克和下次想烤的点心</p></div>
+      <button type="button" class="language-switch" id="language-switch" lang="en" aria-label="Switch to English">English</button>
+    </div>
+    <p class="language-message" id="language-message" role="status" aria-live="polite"></p>
   </div>
 </header>
 <main class="wrap">
@@ -1079,56 +1089,6 @@ li + li { margin-top: .4rem; }
   </details>
 
 </main>
-<script>
-const search = document.querySelector('#search');
-const filters = [...document.querySelectorAll('[data-filter]')];
-const count = document.querySelector('.count');
-const empty = document.querySelector('.empty');
-const recipes = [...document.querySelectorAll('.recipe')].map(element => ({
-  element,
-  text: element.textContent.toLocaleLowerCase().replace(/\s+/g, ''),
-}));
-let active = 'all';
-
-function updateRecipes() {
-  const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
-  let visible = 0;
-  for (const { element, text } of recipes) {
-    const { category, status } = element.dataset;
-    const matchesFilter = active === 'all' || active === category || active === status;
-    element.hidden = !(matchesFilter && terms.every(term => text.includes(term)));
-    if (!element.hidden) visible += 1;
-  }
-  count.textContent = `${visible} 份配方`;
-  empty.hidden = visible > 0;
-}
-
-function openLinkedRecipe() {
-  const recipe = recipes.find(({ element }) => '#' + element.id === location.hash)?.element;
-  if (recipe) {
-    if (recipe.hidden) {
-      search.value = '';
-      filters[0].click();
-    }
-    recipe.open = true;
-    recipe.scrollIntoView({ block: 'start' });
-  }
-}
-
-for (const filter of filters) {
-  filter.addEventListener('click', () => {
-    active = filter.dataset.filter;
-    for (const button of filters) {
-      button.setAttribute('aria-pressed', String(button === filter));
-    }
-    updateRecipes();
-  });
-}
-search.addEventListener('input', updateRecipes);
-window.addEventListener('hashchange', openLinkedRecipe);
-document.querySelector('.toolbar').hidden = false;
-updateRecipes();
-openLinkedRecipe();
-</script>
+<script src="app.js" defer></script>
 </body>
 </html>
