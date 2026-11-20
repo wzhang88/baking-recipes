@@ -22,21 +22,33 @@
             "zh": "低脂奶油奶酪",
             "en": "Reduced-fat cream cheese"
           },
-          "amount": "226 g"
+          "amount": "226 g",
+          "quantity": {
+            "value": 226,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "全脂酸奶",
             "en": "Whole-milk yogurt"
           },
-          "amount": "120 g"
+          "amount": "120 g",
+          "quantity": {
+            "value": 120,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -46,6 +58,11 @@
           "amount": {
             "zh": "2 个",
             "en": "2 eggs"
+          },
+          "quantity": {
+            "value": 2,
+            "unit": "egg",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -53,7 +70,11 @@
             "zh": "无花果酱（Fig Butter）",
             "en": "Fig butter"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -75,7 +96,11 @@
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -103,5 +128,15 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "fig-strawberry-basque"
+  "legacyAnchor": "fig-strawberry-basque",
+  "scale": {
+    "type": "round_pan",
+    "baseDiameterIn": 6,
+    "basePanCount": 1,
+    "diametersIn": [
+      4,
+      6,
+      8
+    ]
+  }
 }
