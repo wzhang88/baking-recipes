@@ -1,0 +1,140 @@
+{
+  "id": "matcha-mille-crepe-notes",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "抹茶千层蛋糕 · 饼皮与奶油笔记",
+    "en": "Matcha Mille Crêpe Cake · Crêpe and Cream Notes"
+  },
+  "summary": {
+    "zh": "饼皮含抹茶 5 g · 奶油配比待试 · 原记录未写煎皮方法",
+    "en": "Crêpes contain 5 g matcha · cream proportions to be tested · original notes omit cooking method"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "饼皮",
+        "en": "Crêpes"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "95 g"
+        },
+        {
+          "name": {
+            "zh": "木薯或玉米淀粉",
+            "en": "Tapioca or cornstarch"
+          },
+          "amount": {
+            "zh": "20 g；本次如用淀粉，记为玉米淀粉",
+            "en": "20 g; if using starch this time, the note specifies cornstarch"
+          }
+        },
+        {
+          "name": {
+            "zh": "抹茶粉",
+            "en": "Matcha powder"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "蛋液",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "4 个，旁注 400 g（数量与重量需核对）",
+            "en": "4 eggs, annotated as 400 g (count and weight need checking)"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "420 g"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "白砂糖",
+            "en": "Granulated sugar"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": {
+            "zh": "一点点",
+            "en": "a little"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "奶油层",
+        "en": "Cream layer"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "700 g"
+        },
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "35 g"
+        },
+        {
+          "name": {
+            "zh": "香草精、抹茶",
+            "en": "Vanilla extract, matcha"
+          },
+          "amount": {
+            "zh": "有记录，未记用量",
+            "en": "Listed, amounts not recorded"
+          },
+          "certainty": "unconfirmed"
+        }
+      ]
+    }
+  ],
+  "steps": [],
+  "notes": [
+    {
+      "zh": "原文只写「先放油、粉、糖、鸡蛋、牛奶，过筛」，没有说明黄油状态、煎皮火候、叠层和冷藏时间。「4 个 400 g」可能不是同一批蛋液的实际重量，先保留原笔记，待核对。",
+      "en": "The original only says “add oil, flour, sugar, eggs, milk first, then sieve.” It does not specify the butter’s state, heat for cooking the crêpes, layering, or chilling time. “4 eggs, 400 g” may not mean that the same batch of egg weighs 400 g; the note is preserved pending confirmation.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "matcha-mille-crepe-notes"
+}

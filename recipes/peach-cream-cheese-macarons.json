@@ -1,0 +1,132 @@
+{
+  "id": "peach-cream-cheese-macarons",
+  "category": "snack",
+  "status": "baked",
+  "title": {
+    "zh": "桃子奶酪马卡龙",
+    "en": "Peach Cream Cheese Macarons"
+  },
+  "summary": {
+    "zh": "约 40 片外壳，夹馅约 20 个 · 320°F 14 分钟",
+    "en": "About 40 shells, enough for about 20 filled macarons · 320°F for 14 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "外壳材料",
+        "en": "Shell ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "蛋清",
+            "en": "Egg white"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉（打发蛋清）",
+            "en": "Powdered sugar (for whipping the egg white)"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "杏仁粉",
+            "en": "Almond flour"
+          },
+          "amount": "65 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉（与杏仁粉混合）",
+            "en": "Powdered sugar (to mix with the almond flour)"
+          },
+          "amount": "80 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "桃子奶酪夹馅",
+        "en": "Peach cream cheese filling"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "Trader Joe’s 桃子味 whipped cream cheese",
+            "en": "Trader Joe’s peach-flavored whipped cream cheese"
+          },
+          "amount": "150 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "80 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉",
+            "en": "Powdered sugar"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "软化黄油",
+            "en": "Softened butter"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "柠檬汁",
+            "en": "Lemon juice"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "A little"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "蛋清加入 15 g 糖粉，打至硬性发泡。",
+      "en": "Add 15 g powdered sugar to the egg white and whip to stiff peaks."
+    },
+    {
+      "zh": "杏仁粉与 80 g 糖粉混合，拌入蛋白霜，制成外壳面糊。",
+      "en": "Combine the almond flour with 80 g powdered sugar, then fold into the meringue to make the shell batter."
+    },
+    {
+      "zh": "挤出外壳，排掉大气泡，晾皮约 20 分钟。",
+      "en": "Pipe the shells, tap out large air bubbles, and let them dry for about 20 minutes."
+    },
+    {
+      "zh": "烤箱以 350°F 预热，再以 320°F 烤 14 分钟。",
+      "en": "Preheat the oven to 350°F, then bake the shells at 320°F for 14 minutes."
+    },
+    {
+      "zh": "外壳放凉后配对夹馅，约做 20 个。",
+      "en": "Once the shells have cooled, pair them and sandwich with filling to make about 20 macarons."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "当时使用 Trader Joe’s 桃子味 whipped cream cheese（打发奶油奶酪）做夹馅，保留实际使用的产品类型。",
+      "en": "The filling used was Trader Joe’s peach-flavored whipped cream cheese; the specific product type used is retained."
+    },
+    {
+      "zh": "手写记录列出了夹馅用量，具体搅拌与打发顺序未注明。",
+      "en": "The handwritten record lists the filling quantities but does not specify the mixing and whipping order."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "peach-cream-cheese-macarons"
+}

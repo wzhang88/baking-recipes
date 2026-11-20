@@ -1,0 +1,145 @@
+{
+  "id": "eight-inch-strawberry-chiffon",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "八寸戚风与草莓奶油",
+    "en": "Eight-Inch Chiffon Cake with Strawberry Cream"
+  },
+  "summary": {
+    "zh": "8 寸 · 270°F 烤 60 分钟 · 草莓奶油夹馅或抹面",
+    "en": "8-inch · bake at 270°F for 60 minutes · strawberry cream filling or frosting"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "戚风蛋糕材料",
+        "en": "Chiffon cake"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "58 g"
+        },
+        {
+          "name": {
+            "zh": "油",
+            "en": "Oil"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "16 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Eggs"
+          },
+          "amount": {
+            "zh": "5 个",
+            "en": "5 eggs"
+          }
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "a pinch"
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "70 g"
+        },
+        {
+          "name": {
+            "zh": "柠檬汁",
+            "en": "Lemon juice"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "a little"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "草莓奶油",
+        "en": "Strawberry cream"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "草莓酱",
+            "en": "Strawberry jam"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": "20 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "牛奶与油先混合。原记录列有面粉、玉米淀粉、鸡蛋、少许盐、糖和少许柠檬汁。",
+      "en": "Mix the milk and oil first. The original note lists flour, cornstarch, eggs, a pinch of salt, sugar, and a little lemon juice."
+    },
+    {
+      "zh": "以 270°F（约 132°C）烤 60 分钟。",
+      "en": "Bake at 270°F (about 132°C) for 60 minutes."
+    },
+    {
+      "zh": "草莓奶油按淡奶油、草莓酱和奶油奶酪的记录比例准备。",
+      "en": "Prepare the strawberry cream using the recorded proportions of heavy cream, strawberry jam, and cream cheese."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "低筋面粉原记 70 g，后改为 65 g，最终确认使用 60 g；原记 300°F，最终确认使用 270°F。原记录没有写明分蛋、打发、翻拌、模具与脱模的具体做法，也没有说明草莓奶油是夹馅还是抹面。",
+      "en": "Cake flour was first recorded as 70 g, then changed to 65 g, and finally confirmed at 60 g. The original temperature was 300°F and was finally confirmed at 270°F. The note does not specify separating the eggs, whipping, folding, the pan, or unmolding, nor whether the strawberry cream is a filling or frosting."
+    },
+    {
+      "zh": "手写页底另有蛋白用量的计算草稿，含义不够明确，暂不作为本配方用量。",
+      "en": "There is also a calculation draft for egg-white amounts at the bottom of the handwritten page. Its meaning is unclear, so it is not treated as an ingredient quantity.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "eight-inch-strawberry-chiffon"
+}

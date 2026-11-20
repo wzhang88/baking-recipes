@@ -1,0 +1,134 @@
+{
+  "id": "sweet-savory-cream-scones",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "甜咸淡奶油司康",
+    "en": "Sweet and Savory Cream Scones"
+  },
+  "summary": {
+    "zh": "低粉 75 g · 淡奶油 60 g · 甜味与咸味两版",
+    "en": "75 g cake flour · 60 g heavy cream · sweet and savory versions"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "甜味版材料",
+        "en": "Sweet version"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "75 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "A pinch"
+          }
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "1 g"
+        },
+        {
+          "name": {
+            "zh": "巧克力、葡萄干",
+            "en": "Chocolate and raisins"
+          },
+          "amount": {
+            "zh": "适量",
+            "en": "As needed"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "咸味版材料",
+        "en": "Savory version"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "75 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "2 g"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "1 g"
+        },
+        {
+          "name": {
+            "zh": "火腿肠、肉松、葱",
+            "en": "Sausage, pork floss, and scallions"
+          },
+          "amount": {
+            "zh": "适量",
+            "en": "As needed"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [],
+  "notes": [
+    {
+      "zh": "本张手写记录未注明制作步骤、烤温、时间及分份大小。另保留蔓越莓淡奶油司康配方，便于分别查看。",
+      "en": "This handwritten recipe does not specify the method, baking temperature, baking time, or portion size. The cranberry cream scone recipe is kept separately for easy reference."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "sweet-savory-cream-scones"
+}

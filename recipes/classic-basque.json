@@ -1,0 +1,92 @@
+{
+  "id": "classic-basque",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "原味六寸巴斯克",
+    "en": "Classic 6-Inch Basque Cheesecake"
+  },
+  "summary": {
+    "zh": "6 寸 · 400°F 10 分钟＋430°F 15–18 分钟",
+    "en": "6-inch · 400°F for 10 minutes + 430°F for 15–18 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": {
+            "zh": "1 盒",
+            "en": "1 package"
+          },
+          "detail": {
+            "zh": "原方未注明净重",
+            "en": "Net weight not specified in the original"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "200 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Eggs"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": "2 eggs"
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "7 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "5 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "先以 400°F 烤 10 分钟，再以 430°F 烤 15–18 分钟。",
+      "en": "Bake at 400°F for 10 minutes, then at 430°F for 15–18 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "奶油奶酪原方写的是「一盒」，净重待补。",
+      "en": "The original recipe specifies “one package” of cream cheese; its net weight needs to be added.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "classic-basque"
+}

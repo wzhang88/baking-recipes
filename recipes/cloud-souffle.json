@@ -1,0 +1,94 @@
+{
+  "id": "cloud-souffle",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "云朵舒芙蕾",
+    "en": "Cloud Soufflé"
+  },
+  "summary": {
+    "zh": "蛋白 3 个＋蛋黄 1 个 · 玉米淀粉 13 g · 温度单位待核",
+    "en": "3 egg whites + 1 egg yolk · 13 g cornstarch · temperature unit unconfirmed"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "蛋白",
+            "en": "Egg whites"
+          },
+          "amount": {
+            "zh": "3 个",
+            "en": "3"
+          }
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolk"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1"
+          }
+        },
+        {
+          "name": {
+            "zh": "柠檬汁",
+            "en": "Lemon juice"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": {
+            "zh": "20 g：蛋黄 5 g，其余 15 g 用于蛋白",
+            "en": "20 g: 5 g for the yolk, remaining 15 g for the whites"
+          }
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": {
+            "zh": "13 g：蛋白 10 g，蛋黄 3 g",
+            "en": "13 g: 10 g for the whites, 3 g for the yolk"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "分三次向蛋白加糖，第三次加糖时放入 10 g 玉米淀粉；打至提起有小尖角，最后低速转几圈。注意不要打过头。",
+      "en": "Add the sugar to the egg whites in three additions. With the third addition, add 10 g cornstarch. Beat until lifting the whisk leaves a small peak, then mix on low speed for a few more turns. Do not overbeat."
+    },
+    {
+      "zh": "将蛋白霜在铺油纸的烤盘上堆出形状。",
+      "en": "Pile the meringue into a shape on a parchment-lined baking tray."
+    },
+    {
+      "zh": "原文写「320C 10 分钟，300 烤 25 分钟左右」。温度记法明显存疑，核实单位和实际烤箱设置后再试做。",
+      "en": "The original says “320C for 10 minutes, then 300 for about 25 minutes.” The temperature notation is clearly uncertain; verify the units and actual oven settings before trying it."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "蛋黄部分只记了分配到的糖与淀粉，没有说明混合和组装方法；柠檬汁的加入时机也未写。截图中的 320C 按原文记录，不能直接作为摄氏度烘烤指令。",
+      "en": "For the yolk portion, only the allocated sugar and cornstarch are recorded; no mixing or assembly method is given. The note also does not say when to add the lemon juice. The screenshot’s “320C” is retained as written and must not be treated as a Celsius baking instruction.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "cloud-souffle"
+}

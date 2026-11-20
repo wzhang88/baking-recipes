@@ -1,0 +1,70 @@
+{
+  "id": "double-skin-milk",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "双皮奶",
+    "en": "Double-Skin Milk Pudding"
+  },
+  "summary": {
+    "zh": "全脂牛奶＋淡奶油 · 水开后加盖蒸 15 分钟",
+    "en": "Whole milk + heavy cream · steam covered for 15 minutes after the water boils"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "材料"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "全脂牛奶",
+            "en": "Whole milk"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "7 g"
+        },
+        {
+          "name": {
+            "zh": "蛋清",
+            "en": "Egg white"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg white"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "水开后加盖蒸 15 分钟。",
+      "en": "Once the water boils, cover and steam for 15 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "手写记录未注明起奶皮、混合与过筛步骤，以及容器大小和份数。",
+      "en": "The handwritten note does not specify how to form the milk skin, mix or strain the ingredients, or the container size and number of servings.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "double-skin-milk"
+}

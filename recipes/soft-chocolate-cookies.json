@@ -1,0 +1,137 @@
+{
+  "id": "soft-chocolate-cookies",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "软心巧克力曲奇",
+    "en": "Soft-Centered Chocolate Cookies"
+  },
+  "summary": {
+    "zh": "烤前冷藏 · 每份 50–60 g · 350°F 约 19 分钟",
+    "en": "Chill before baking · 50–60 g each · about 19 minutes at 350°F"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "黄油（标准美式两条）",
+            "en": "Butter (two standard U.S. sticks)"
+          },
+          "amount": "226 g"
+        },
+        {
+          "name": {
+            "zh": "白糖",
+            "en": "White sugar"
+          },
+          "amount": "30–50 g"
+        },
+        {
+          "name": {
+            "zh": "红糖",
+            "en": "Brown sugar"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Eggs"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": {
+              "zh": "2 个",
+              "en": "2 eggs"
+            }
+          }
+        },
+        {
+          "name": {
+            "zh": "巧克力、坚果、葡萄干等配料（合计）",
+            "en": "Chocolate, nuts, raisins, or other mix-ins (total)"
+          },
+          "amount": "300 g"
+        },
+        {
+          "name": {
+            "zh": "中筋面粉",
+            "en": "All-purpose flour"
+          },
+          "amount": "200 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "136 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "6 g"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "4 g"
+        },
+        {
+          "name": {
+            "zh": "小苏打",
+            "en": "Baking soda"
+          },
+          "amount": "3 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "1–2 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "黄油与白糖、红糖打发至蓬松发白。鸡蛋分批加入。",
+      "en": "Cream the butter with the white and brown sugars until pale and fluffy. Add the eggs in batches."
+    },
+    {
+      "zh": "粉类过筛后拌入，再加入合计 300 g 的自选配料。",
+      "en": "Sift and mix in the dry ingredients, then add 300 g total of mix-ins of your choice."
+    },
+    {
+      "zh": "手写记录每份 50–60 g，烤前冷藏约 1 小时。",
+      "en": "The handwritten record specifies 50–60 g per portion and chilling for about 1 hour before baking."
+    },
+    {
+      "zh": "烤箱预热，350°F 烤约 19 分钟，最后根据上色情况调整时间。",
+      "en": "Preheat the oven and bake at 350°F for about 19 minutes, adjusting the time at the end according to browning."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "白糖用 30–50 g，配料较甜时少放一些。个人口感记录「糖越多越软」。",
+      "en": "Use 30–50 g white sugar, using less when the mix-ins are sweet. Personal tasting note: “The more sugar, the softer the cookie.”"
+    },
+    {
+      "zh": "巧克力、坚果、葡萄干等配料可自由组合，合计 300 g。可使用白巧克力或夏威夷果，并按配料甜度调整白糖用量。抹茶版沿用基础面团，另加 10 g 抹茶粉，配料同样合计 300 g。",
+      "en": "Combine chocolate, nuts, raisins, and other mix-ins as desired, totaling 300 g. White chocolate or macadamia nuts may be used; adjust the white sugar to suit the sweetness of the mix-ins. For a matcha version, use the base dough and add 10 g matcha powder; the mix-ins still total 300 g."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "soft-chocolate-cookies"
+}

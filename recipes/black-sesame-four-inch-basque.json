@@ -1,0 +1,106 @@
+{
+  "id": "black-sesame-four-inch-basque",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "黑芝麻四寸巴斯克",
+    "en": "Black Sesame 4-Inch Basque Cheesecake"
+  },
+  "summary": {
+    "zh": "2 个 4 寸 · 黑芝麻酱 25 g · 400°F＋430°F",
+    "en": "Two 4-inch cakes · 25 g black sesame paste · 400°F + 430°F"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料：两只四寸",
+        "en": "Ingredients: two 4-inch cakes"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": {
+            "zh": "150 g，先软化",
+            "en": "150 g, softened first"
+          }
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Granulated sugar"
+          },
+          "amount": {
+            "zh": "40–45 g（原文写 45 g 或 40 g）",
+            "en": "40–45 g (original says 45 g or 40 g)"
+          },
+          "detail": {
+            "zh": "原文两个用量并存",
+            "en": "Both amounts appear in the original"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "150 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "6 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "4 g"
+        },
+        {
+          "name": {
+            "zh": "黑芝麻酱",
+            "en": "Black sesame paste"
+          },
+          "amount": "25 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "奶油奶酪先软化；其余混合与过筛顺序未记。",
+      "en": "Soften the cream cheese first; the mixing and sifting order for the remaining ingredients was not recorded."
+    },
+    {
+      "zh": "以 400°F 烤 10 分钟，再以 430°F 烤约 15 分钟。",
+      "en": "Bake at 400°F for 10 minutes, then at 430°F for about 15 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "同一备忘录另一处写第二段 15–18 分钟，按实际表面上色情况观察。黑芝麻酱是否含糖、冷却与冷藏时间未记。与六寸原味巴斯克分开保存，勿直接按模具尺寸套用烤制时间。",
+      "en": "Another part of the same note gives 15–18 minutes for the second stage; judge by the surface browning. Whether the black sesame paste is sweetened and the cooling and chilling times were not recorded. Keep this separate from the 6-inch classic Basque recipe; do not scale the baking time directly by pan size.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "black-sesame-four-inch-basque"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "cranberry-cream-scones",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "蔓越莓淡奶油司康",
+    "en": "Cranberry Cream Scones"
+  },
+  "summary": {
+    "zh": "低粉与淡奶油 1∶1 · 400°F · 20 分钟",
+    "en": "Cake flour and heavy cream at 1:1 · 400°F · 20 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "甜味版材料",
+        "en": "Sweet version"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "低筋面粉与淡奶油",
+            "en": "Cake flour and heavy cream"
+          },
+          "amount": "1:1"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "10%"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "1%"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "0.8%"
+        },
+        {
+          "name": {
+            "zh": "蔓越莓",
+            "en": "Cranberries"
+          },
+          "amount": {
+            "zh": "适量，按喜好添加",
+            "en": "To taste"
+          }
+        },
+        {
+          "name": {
+            "zh": "表面蛋液",
+            "en": "Egg wash"
+          },
+          "amount": {
+            "zh": "适量",
+            "en": "As needed"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "咸味变化",
+        "en": "Savory variation"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "5%"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "2%"
+        },
+        {
+          "name": {
+            "zh": "肉松、海苔、葱",
+            "en": "Pork floss, nori, and scallions"
+          },
+          "amount": {
+            "zh": "用量未记录",
+            "en": "Amount not recorded"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "表面刷蛋液，400°F 烤 20 分钟。",
+      "en": "Brush the tops with egg wash and bake at 400°F for 20 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "手写旁注「8% 糖不甜」。糖、盐和泡打粉均以面粉重量为 100% 计算。",
+      "en": "Handwritten note: “8% sugar isn’t sweet.” Sugar, salt, and baking powder percentages are based on the flour weight."
+    },
+    {
+      "zh": "面团混合、整形方法及每份大小，手写记录未注明。",
+      "en": "The handwritten record does not specify how to mix or shape the dough, or the size of each portion."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "cranberry-cream-scones"
+}

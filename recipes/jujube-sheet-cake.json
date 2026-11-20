@@ -1,0 +1,140 @@
+{
+  "id": "jujube-sheet-cake",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "方盘枣糕",
+    "en": "Jujube Sheet Cake"
+  },
+  "summary": {
+    "zh": "28×28 cm 方盘 · 300°F · 50 分钟",
+    "en": "28 × 28 cm square pan · 300°F · 50 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "枣泥",
+        "en": "Jujube paste"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "红枣",
+            "en": "Red dates"
+          },
+          "amount": "250 g"
+        },
+        {
+          "name": {
+            "zh": "水",
+            "en": "Water"
+          },
+          "amount": "300 g"
+        },
+        {
+          "name": {
+            "zh": "黑糖",
+            "en": "Brown sugar"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "朗姆酒",
+            "en": "Rum"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "A little"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "蛋糕糊",
+        "en": "Cake batter"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "玉米油",
+            "en": "Corn oil"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋（分蛋）",
+            "en": "Eggs, separated"
+          },
+          "amount": {
+            "zh": "9 个",
+            "en": {
+              "zh": "9 个",
+              "en": "9 eggs"
+            }
+          }
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "255 g"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "糖（打发蛋白）",
+            "en": "Sugar (for whipping the egg whites)"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "塔塔粉（cream of tartar）",
+            "en": "Cream of tartar"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "A little"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "红枣、水、黑糖和少许朗姆酒打成泥，炒干。",
+      "en": "Blend the red dates, water, brown sugar, and a little rum into a paste, then cook it until dry."
+    },
+    {
+      "zh": "蛋白加入 10 g 糖和少许塔塔粉，打发至偏硬。",
+      "en": "Add 10 g sugar and a little cream of tartar to the egg whites; whip to fairly stiff peaks."
+    },
+    {
+      "zh": "蛋黄与枣泥、玉米油搅匀，再与打发的蛋白拌匀，逐渐加入低筋面粉和泡打粉。",
+      "en": "Mix the egg yolks with the jujube paste and corn oil, then fold in the whipped egg whites. Gradually add the cake flour and baking powder."
+    },
+    {
+      "zh": "倒入 28×28 cm 方盘，300°F 烤 50 分钟。",
+      "en": "Pour into a 28 × 28 cm square pan and bake at 300°F for 50 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "手写旁注「张君雅」。红枣的 250 g 是否为去核重量，原记录未注明。",
+      "en": "Handwritten note: “张君雅.” The original record does not say whether the 250 g of red dates is weighed pitted or unpitted."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "jujube-sheet-cake"
+}

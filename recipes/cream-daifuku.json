@@ -1,0 +1,171 @@
+{
+  "id": "cream-daifuku",
+  "category": "snack",
+  "status": "baked",
+  "title": {
+    "zh": "奶油大福",
+    "en": "Cream Daifuku"
+  },
+  "summary": {
+    "zh": "可按比例倍量 · 每份皮约 40 g · 大火蒸约 25 分钟",
+    "en": "Scale up proportionally · about 40 g dough per piece · steam over high heat for about 25 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "大福皮基础配方",
+        "en": "Daifuku dough base recipe"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "糯米粉",
+            "en": "Glutinous rice flour"
+          },
+          "amount": "120 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "180 g"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "15 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "按糯米粉重量计算的比例",
+        "en": "Percentages by weight of glutinous rice flour"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "糯米粉",
+            "en": "Glutinous rice flour"
+          },
+          "amount": "100%"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "25%"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "12.5%"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "150%"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "12.5%"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "试做调整用量",
+        "en": "Amounts used in the trial"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "糯米粉",
+            "en": "Glutinous rice flour"
+          },
+          "amount": "144 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "36 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "216 g"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "20 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "按需要将基础配方的所有材料乘以同一个倍数。",
+      "en": "Multiply all ingredients in the base recipe by the same factor as needed."
+    },
+    {
+      "zh": "大福皮用大火蒸约 25 分钟，每份皮约 40 g，包奶油夹心。",
+      "en": "Steam the daifuku dough over high heat for about 25 minutes. Use about 40 g dough per piece and wrap it around a cream filling."
+    },
+    {
+      "zh": "当时为了消耗做夹心的奶油，多蒸了一批皮。",
+      "en": "A larger batch of dough was steamed at the time to use up the cream intended for the filling."
+    },
+    {
+      "zh": "这批粉类和牛奶为基础配方的 1.2 倍，糖和黄油当时各用了 20 g。以后以基础配方按比例增减。",
+      "en": "The flour and milk in this batch were 1.2 times the base recipe; 20 g each of sugar and butter were used. Scale future batches up or down proportionally from the base recipe."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "手写记录未注明奶油夹心的配方、用量，以及黄油加入时机和揉皮步骤。蒸制时间为这次记录，增减批量时需结合实际厚度与熟度判断。",
+      "en": "The handwritten record does not specify the cream filling recipe or quantity, when to add the butter, or how to knead the dough. The steaming time is from this trial; adjust based on the dough thickness and doneness when changing batch size."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "cream-daifuku"
+}

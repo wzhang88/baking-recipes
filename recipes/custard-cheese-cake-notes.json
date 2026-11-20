@@ -1,0 +1,218 @@
+{
+  "id": "custard-cheese-cake-notes",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "奶酪卡仕达、蛋糕胚与奶油酱笔记",
+    "en": "Notes on Cheese Custard, Cake Sponge, and Cream"
+  },
+  "summary": {
+    "zh": "奶酪卡仕达名称为推断 · 奶油酱下次减半 · 烤制参数待补",
+    "en": "“Cheese custard” is an inference · halve the cream mixture next time · baking details missing"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "上半部分：疑似奶酪卡仕达",
+        "en": "Top section: possibly cheese custard"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolks"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": "2"
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "28 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "150 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "14 g"
+        },
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": {
+            "zh": "60 g（原记带问号）",
+            "en": "60 g (question mark in original)"
+          },
+          "detail": {
+            "zh": "原记数量带问号",
+            "en": "Quantity marked with a question mark in the original"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "15 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "蛋糕胚",
+        "en": "Cake sponge"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "蛋白",
+            "en": "Egg whites"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": "2"
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "36 g"
+        },
+        {
+          "name": {
+            "zh": "油",
+            "en": "Oil"
+          },
+          "amount": "22 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "36 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "6 g"
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolks"
+          },
+          "amount": {
+            "zh": "36 g（约 2 个，原记带问号）",
+            "en": "36 g (about 2; question mark in original)"
+          },
+          "detail": {
+            "zh": "约 2 个，原记带问号",
+            "en": "About 2; marked with a question mark in the original"
+          },
+          "certainty": "unconfirmed"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "奶油酱：原手写用量",
+        "en": "Cream mixture: original handwritten quantities"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "卡仕达酱",
+            "en": "Custard"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉",
+            "en": "Powdered sugar"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "200 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "下次先试：奶油酱减半",
+        "en": "Next trial: halve the cream mixture"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "卡仕达酱",
+            "en": "Custard"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉",
+            "en": "Powdered sugar"
+          },
+          "amount": "7.5 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "100 g"
+        }
+      ]
+    }
+  ],
+  "steps": [],
+  "notes": [
+    {
+      "zh": "手写页旁记「做太多了，减半！」，这里仅将最下方奶油酱减半；蛋糕胚仍按原量。上半部分原记录没有名称，因材料与奶酪卡仕达酱相似而暂作推断；是否就是下方所用的卡仕达酱、实际制作顺序及整份蛋糕用途，均待核对。上半部分照原量制作会多于下方需要的 50 g。",
+      "en": "A note beside the handwritten page says, “Made too much; halve it!” Only the bottom cream mixture is halved here; the cake sponge remains at the original quantities. The top section has no name in the original and is tentatively inferred to be cheese custard because its ingredients are similar. Whether it is the custard used below, the actual preparation order, and the purpose of the whole cake all need confirmation. Making the top section at its original quantities yields more than the 50 g needed below.",
+      "certainty": "unconfirmed"
+    },
+    {
+      "zh": "蛋糕胚的烘烤温度、时间、模具尺寸和组装方法未见于这张手写记录。",
+      "en": "The handwritten note does not give the cake sponge’s baking temperature, time, pan size, or assembly method.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "custard-cheese-cake-notes"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "light-cheesecake-notes",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "轻芝士蛋糕",
+    "en": "Japanese-Style Light Cheesecake"
+  },
+  "summary": {
+    "zh": "鸡蛋 6 个 · 奶油奶酪 250 g · 玉米淀粉 40 g · 水浴",
+    "en": "6 eggs · 250 g cream cheese · 40 g cornstarch · water bath"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "手写材料",
+        "en": "Handwritten ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Eggs"
+          },
+          "amount": {
+            "zh": "6 个",
+            "en": "6 eggs"
+          }
+        },
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": {
+            "zh": "1 盒，旁注 250 g",
+            "en": "1 package, annotated as 250 g"
+          }
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": {
+            "zh": "60 g（涂改后似为 60 g）",
+            "en": "60 g (appears to be 60 g after correction)"
+          },
+          "detail": {
+            "zh": "手写涂改，读数不确定",
+            "en": "Handwritten correction; reading uncertain"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "奶油",
+            "en": "Cream"
+          },
+          "amount": {
+            "zh": "60 g（种类待核）",
+            "en": "60 g (type to confirm)"
+          },
+          "detail": {
+            "zh": "未注明奶油种类",
+            "en": "Type of cream not specified"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "面粉",
+            "en": "Flour"
+          },
+          "amount": {
+            "zh": "40 g（种类未写）",
+            "en": "40 g (type not specified)"
+          },
+          "detail": {
+            "zh": "未注明面粉种类",
+            "en": "Type of flour not specified"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": {
+            "zh": "40 g（已确认）",
+            "en": "40 g (confirmed)"
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "60 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "奶油奶酪与黄油软化；原文随后写牛奶与粉、奶油，具体混合顺序待核。",
+      "en": "Soften the cream cheese and butter. The original then mentions milk, flour/starch, and cream; the exact mixing order needs confirmation."
+    },
+    {
+      "zh": "蛋白打至湿性发泡，笔记提醒低速打发、分次加糖、不要打过头；另写「半个柠檬」，用法待核。",
+      "en": "Beat the egg whites to soft peaks. The note advises beating on low speed, adding the sugar in stages, and not overbeating. It also says “half a lemon”; how to use it needs confirmation."
+    },
+    {
+      "zh": "采用水浴法。原文写「290 度」约 1 小时，接着「230 度」30 分钟；关火后闷约两小时，再放凉入冰箱。",
+      "en": "Use a water bath. The original says “290 degrees” for about 1 hour, followed by “230 degrees” for 30 minutes; leave in the switched-off oven for about 2 hours, then cool and refrigerate."
+    },
+    {
+      "zh": "下次试烤：若使用约 8 寸模、水浴且蛋糕糊高度相近，可先试 300°F（约 150°C）45 分钟，再降至 250°F（约 120°C）15 分钟，关火静置约 30 分钟。总烘烤约 60 分钟；按表面上色和中心凝固情况调整。此为参考配方的试验方案，尚非本配方的实测结果。",
+      "en": "Next test bake: if using an approximately 8-inch pan, a water bath, and a similar batter depth, first try 300°F (about 150°C) for 45 minutes, then reduce to 250°F (about 120°C) for 15 minutes; leave in the switched-off oven for about 30 minutes. Total baking time is about 60 minutes; adjust based on browning and how set the center is. This is a trial plan based on a reference recipe, not a tested result for this recipe."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "原记「290／230 度」按美式烤箱推测为 °F，但单位尚未确认；第一段旁另有「50」字迹。模具尺寸与实际蛋糕糊高度待补，若用更小、更深的模具，不能直接套用 60 分钟。可参看下厨房八寸轻乳酪蛋糕水浴烤法：https://m.xiachufang.com/recipe/103498478/",
+      "en": "The original “290/230 degrees” is inferred to mean °F based on an American oven, but the unit is unconfirmed; “50” is also written beside the first stage. Pan size and actual batter depth need to be added. Do not apply the 60-minute time directly to a smaller, deeper pan. Reference: Xiachufang water-bath method for an 8-inch light cheesecake: https://m.xiachufang.com/recipe/103498478/",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "light-cheesecake-notes"
+}

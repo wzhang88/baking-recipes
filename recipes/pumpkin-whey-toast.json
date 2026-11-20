@@ -1,0 +1,122 @@
+{
+  "id": "pumpkin-whey-toast",
+  "category": "bread",
+  "status": "baked",
+  "title": {
+    "zh": "南瓜乳清吐司",
+    "en": "Pumpkin Whey Toast"
+  },
+  "summary": {
+    "zh": "罐装南瓜泥 · 乳清分离蛋白 · 烤温待补",
+    "en": "Canned pumpkin purée · whey isolate · baking temperature to confirm"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "面团材料",
+        "en": "Dough ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "King Arthur 高筋面粉",
+            "en": "King Arthur bread flour"
+          },
+          "amount": "510 g"
+        },
+        {
+          "name": {
+            "zh": "Revolution 乳清分离蛋白粉",
+            "en": "Revolution whey protein isolate"
+          },
+          "amount": "37 g"
+        },
+        {
+          "name": {
+            "zh": "Organic Valley Protein Plus 牛奶",
+            "en": "Organic Valley Protein Plus milk"
+          },
+          "amount": "150 g"
+        },
+        {
+          "name": {
+            "zh": "Trader Joe’s 南瓜泥",
+            "en": "Trader Joe’s pumpkin purée"
+          },
+          "amount": "250 g"
+        },
+        {
+          "name": {
+            "zh": "Bob’s Red Mill 脱脂奶粉",
+            "en": "Bob’s Red Mill nonfat dry milk"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "糯米粉",
+            "en": "Glutinous rice flour"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "黄油",
+            "en": "Butter"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "酵母",
+            "en": "Yeast"
+          },
+          "amount": "6 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "6 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "当时使用的 37 g 乳清粉含 25 g 蛋白质。",
+      "en": "The 37 g of whey powder used at the time contained 25 g of protein."
+    },
+    {
+      "zh": "曾讨论南瓜奶酪夹心，成品夹心用量待确认。",
+      "en": "A pumpkin cheesecake filling was discussed; the amount used in the finished loaf needs confirmation."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "旧记录出现过「切 10 片」和「两条、每条 8 片」。分模、切片、发酵和烤箱设置待核。",
+      "en": "Older notes mention “cut into 10 slices” and “two loaves, 8 slices each.” Pan division, slicing, proofing, and oven settings need confirmation."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "pumpkin-whey-toast"
+}

@@ -1,0 +1,185 @@
+{
+  "id": "matcha-cream-cheese-cookies",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "抹茶奶油奶酪曲奇",
+    "en": "Matcha Cream Cheese Cookies"
+  },
+  "summary": {
+    "zh": "8 个大曲奇 · 冷藏 30 分钟 · 350°F 烤约 13 分钟",
+    "en": "8 large cookies · chill 30 minutes · bake at 350°F for about 13 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "曲奇面团",
+        "en": "曲奇面团"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "无盐黄油",
+            "en": "Unsalted butter, melted"
+          },
+          "amount": "113 g，融化"
+        },
+        {
+          "name": {
+            "zh": "黄糖",
+            "en": "Brown sugar"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "白砂糖",
+            "en": "Granulated sugar"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "抹茶粉",
+            "en": "Matcha powder"
+          },
+          "amount": "8 g"
+        },
+        {
+          "name": {
+            "zh": "全蛋",
+            "en": "Whole egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolk"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg yolk"
+          }
+        },
+        {
+          "name": {
+            "zh": "中筋面粉",
+            "en": "All-purpose flour"
+          },
+          "amount": "140 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "小苏打",
+            "en": "Baking soda"
+          },
+          "amount": "2 g"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "2 g"
+        },
+        {
+          "name": {
+            "zh": "海盐",
+            "en": "Sea salt"
+          },
+          "amount": "1 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "奶油奶酪霜与装饰",
+        "en": "Cream cheese frosting and decoration"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": "115 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "糖粉或白砂糖",
+            "en": "Powdered sugar or granulated sugar"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "草莓酱",
+            "en": "Strawberry jam, as needed for decoration"
+          },
+          "amount": "适量，装饰用"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "混合融化黄油、黄糖和白砂糖。",
+      "en": "Mix the melted butter, brown sugar, and granulated sugar."
+    },
+    {
+      "zh": "加入全蛋和蛋黄，搅拌均匀。",
+      "en": "Add the whole egg and egg yolk and mix well."
+    },
+    {
+      "zh": "筛入抹茶粉、中筋面粉、低筋面粉、玉米淀粉、小苏打、泡打粉和盐，混合成面团。",
+      "en": "Sift in the matcha powder, all-purpose flour, cake flour, cornstarch, baking soda, baking powder, and salt. Mix to form a dough."
+    },
+    {
+      "zh": "面团分成 8 份，冷藏 30 分钟。",
+      "en": "Divide the dough into 8 portions and chill for 30 minutes."
+    },
+    {
+      "zh": "烤箱预热至 375°F（约 190°C）；放入曲奇后以 350°F（约 175°C）烤约 13 分钟。",
+      "en": "Preheat the oven to 375°F (about 190°C). Once the cookies are in the oven, bake at 350°F (about 175°C) for about 13 minutes."
+    },
+    {
+      "zh": "曲奇完全冷却后挤上奶油奶酪霜，最后在表面点缀适量草莓酱。",
+      "en": "Once the cookies have cooled completely, pipe on the cream cheese frosting and finish with a little strawberry jam on top."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "草莓酱只用于最后装饰，不计入奶油奶酪霜。原手写记录没有注明奶油奶酪霜的具体打发顺序及保存时间。",
+      "en": "The strawberry jam is only for the final decoration and is not part of the cream cheese frosting. The handwritten note does not specify the order for whipping the frosting or its storage time.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "matcha-cream-cheese-cookies"
+}

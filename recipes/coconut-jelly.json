@@ -1,0 +1,140 @@
+{
+  "id": "coconut-jelly",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "椰子冻 · 普通版与 MeloMelo 版",
+    "en": "Coconut Jelly · Regular and MeloMelo Versions"
+  },
+  "summary": {
+    "zh": "两种记录分别保留 · 吉利丁用量不同 · 冷藏时间待补",
+    "en": "Both versions preserved separately · different gelatin amounts · chilling time missing"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "普通版",
+        "en": "Regular version"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "椰奶",
+            "en": "Coconut milk"
+          },
+          "amount": {
+            "zh": "1 罐",
+            "en": "1 can"
+          }
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "500 g"
+        },
+        {
+          "name": {
+            "zh": "吉利丁",
+            "en": "Gelatin"
+          },
+          "amount": "14 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "30 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "MeloMelo 版",
+        "en": "MeloMelo version"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "吉利丁粉",
+            "en": "Gelatin powder"
+          },
+          "amount": {
+            "zh": "7 g，配水 35 g",
+            "en": "7 g, with 35 g water"
+          }
+        },
+        {
+          "name": {
+            "zh": "椰奶",
+            "en": "Coconut milk"
+          },
+          "amount": {
+            "zh": "1 罐",
+            "en": "1 can"
+          }
+        },
+        {
+          "name": {
+            "zh": "全脂牛奶与淡奶油",
+            "en": "Whole milk and heavy cream"
+          },
+          "amount": {
+            "zh": "80 g＋40 g，或 60 g＋60 g",
+            "en": "80 g + 40 g, or 60 g + 60 g"
+          }
+        },
+        {
+          "name": {
+            "zh": "炼乳",
+            "en": "Sweetened condensed milk"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "25–30 g"
+        },
+        {
+          "name": {
+            "zh": "椰青",
+            "en": "Young coconut"
+          },
+          "amount": {
+            "zh": "250 g（原文）",
+            "en": "250 g (as written)"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "MeloMelo 版先用 35 g 水泡发 7 g 吉利丁粉。",
+      "en": "For the MeloMelo version, first bloom 7 g gelatin powder in 35 g water."
+    },
+    {
+      "zh": "把椰奶、牛奶、淡奶油、炼乳与糖搅拌加热至约 50°C。",
+      "en": "Stir the coconut milk, milk, heavy cream, condensed milk, and sugar together and heat to about 50°C."
+    },
+    {
+      "zh": "关火后加入泡发的吉利丁，随后加入 250 g 椰青。",
+      "en": "Remove from the heat and add the bloomed gelatin, then add 250 g young coconut."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "普通版只有材料，没有写制作步骤。MeloMelo 版还写有「吉利丁片 1∶70 液体」与「可加椰子水 10%」，作为原始备忘保留；是否用于这批、如何计算以及椰青具体指椰肉还是椰子水，均待核对。椰奶罐的净重、容器份数和冷藏定型时间未记。",
+      "en": "The regular version lists ingredients only and gives no method. The MeloMelo notes also say “gelatin sheets 1:70 liquid” and “may add 10% coconut water”; these are preserved as written. Whether they apply to this batch, how to calculate them, and whether “young coconut” means coconut flesh or coconut water all need confirmation. The net weight of the coconut milk can, number of servings/containers, and chilling time to set are not recorded.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "coconut-jelly"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "cream-egg-tarts",
+  "category": "snack",
+  "status": "saved",
+  "title": {
+    "zh": "奶油蛋挞",
+    "en": "Cream Egg Tarts"
+  },
+  "summary": {
+    "zh": "现成挞皮 · 蛋挞液过筛后冷藏静置 1 小时",
+    "en": "Ready-made tart shells · strain the custard, then chill for 1 hour"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "材料"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "200 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "200 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolks"
+          },
+          "amount": {
+            "zh": "4 个",
+            "en": "4 egg yolks"
+          }
+        },
+        {
+          "name": {
+            "zh": "蛋清",
+            "en": "Egg white"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg white"
+          }
+        },
+        {
+          "name": {
+            "zh": "炼乳",
+            "en": "Sweetened condensed milk"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "现成蛋挞皮",
+            "en": "Ready-made egg tart shells"
+          },
+          "amount": "按大小准备"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "将蛋挞液材料混合均匀，最后过筛。",
+      "en": "Mix the custard ingredients well, then strain."
+    },
+    {
+      "zh": "冷藏静置 1 小时。",
+      "en": "Chill and let rest for 1 hour."
+    },
+    {
+      "zh": "准备现成蛋挞皮，是否需要解冻按包装说明处理，倒入蛋挞液后烘烤。",
+      "en": "Prepare the ready-made tart shells, thawing them if required by the package instructions. Pour in the custard and bake."
+    },
+    {
+      "zh": "待试烘烤参考：烤箱充分预热至 400°F（约 205°C），放中下层，先烤约 25 分钟。从 20 分钟开始观察，按上色和凝固情况调整，必要时延长至约 30 分钟。挞皮应上色，蛋挞液凝固，表面可出现焦斑。",
+      "en": "Trial baking guide: Fully preheat the oven to 400°F (about 205°C). Bake on the lower-middle rack for about 25 minutes. Start checking at 20 minutes and adjust for browning and setting; extend to about 30 minutes if needed. The shells should brown and the custard should set; browned spots may appear on top."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "原手写记录未注明烤温和时间。这里按下厨房配方补充美式烤箱的试做起点，尚未在这份蛋挞液与实际挞皮组合上验证。挞皮品牌、尺寸和最终份数待补。",
+      "en": "The handwritten note gives no oven temperature or baking time. A trial starting point for a US oven has been added based on the Xiachufang recipe, but has not been tested with this custard and the actual shells. Shell brand, size, and final yield still need to be recorded.",
+      "certainty": "unconfirmed"
+    },
+    {
+      "zh": "参考链接：下厨房 · Tinrry 葡式蛋挞。",
+      "en": "Reference: Xiachufang · Tinrry Portuguese egg tarts. https://m.xiachufang.com/recipe/102958090/"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "cream-egg-tarts"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "black-sesame-tiramisu",
+  "category": "cake",
+  "status": "baked",
+  "title": {
+    "zh": "提拉米苏 · 原味基底与口味变化",
+    "en": "Tiramisu · Base and Flavor Variations"
+  },
+  "summary": {
+    "zh": "原味／黑芝麻／抹茶 · 按口味搭配饼干浸液",
+    "en": "Classic / black sesame / matcha · pair the biscuit dip with the chosen flavor"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "原味奶酪糊基底",
+        "en": "Classic mascarpone cream base"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "马斯卡彭（mascarpone，一盒）",
+            "en": "Mascarpone (one container)"
+          },
+          "amount": "227 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "200 g"
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolks"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "水",
+            "en": "Water"
+          },
+          "amount": "21 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "饼干与浸液",
+        "en": "Biscuits and dipping liquid"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "手指饼干",
+            "en": "Ladyfingers"
+          },
+          "amount": "用量待补"
+        },
+        {
+          "name": {
+            "zh": "饼干浸液",
+            "en": "Biscuit dipping liquid; choose according to flavor below"
+          },
+          "amount": "按口味选择，见下方变化"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "口味变化",
+        "en": "Flavor variations"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "原味（延伸待试）",
+            "en": "Classic (variation to test)"
+          },
+          "amount": "原味基底，饼干蘸咖啡＋咖啡酒"
+        },
+        {
+          "name": {
+            "zh": "黑芝麻（已试做）",
+            "en": "Black sesame (tested)"
+          },
+          "amount": "基底加无糖黑芝麻酱 20 g，饼干蘸豆浆或牛奶"
+        },
+        {
+          "name": {
+            "zh": "抹茶（延伸待试）",
+            "en": "Matcha (variation to test)"
+          },
+          "amount": "基底加抹茶粉，饼干蘸抹茶液"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "蛋黄、糖和水混合，加热至混合后的蛋黄糊本身达到 80°C。",
+      "en": "Combine the egg yolks, sugar, and water, and heat until the yolk mixture itself reaches 80°C."
+    },
+    {
+      "zh": "手指饼干蘸对应口味的浸液，与奶酪糊分层组装。当时试做的是黑芝麻口味，浸液为豆浆。",
+      "en": "Dip the ladyfingers in the liquid for the chosen flavor and layer them with the mascarpone cream. The version tested at the time was black sesame, using soy milk for dipping."
+    },
+    {
+      "zh": "当时黑芝麻版使用无糖黑芝麻酱，手指饼干蘸的是豆浆。黑芝麻版浸液可改用牛奶，不使用咖啡。",
+      "en": "The tested black sesame version used unsweetened black sesame paste, and the ladyfingers were dipped in soy milk. Milk may be used instead for the black sesame version; do not use coffee."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "原味基底由已试做的黑芝麻配方去掉黑芝麻酱延伸整理，原味和抹茶版本尚未验证。抹茶粉用量、抹茶液浓度及咖啡与咖啡酒的比例待补。",
+      "en": "The classic base was derived from the tested black sesame recipe by omitting the black sesame paste. The classic and matcha versions have not been tested. Matcha powder quantity, matcha liquid strength, and the coffee-to-coffee liqueur ratio still need to be recorded.",
+      "certainty": "unconfirmed"
+    },
+    {
+      "zh": "原记录未注明淡奶油打发程度、奶酪糊具体混合顺序、饼干用量、模具及冷藏定型时间，待补充。",
+      "en": "The original note does not specify how much to whip the cream, the exact order for combining the mascarpone mixture, the quantity of ladyfingers, the dish, or the chilling time needed to set.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "black-sesame-tiramisu"
+}

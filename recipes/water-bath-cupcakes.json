@@ -1,0 +1,104 @@
+{
+  "id": "water-bath-cupcakes",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "水浴纸杯蛋糕",
+    "en": "Water-Bath Cupcakes"
+  },
+  "summary": {
+    "zh": "6 个 · 265°F 30 分钟＋300°F 15 分钟",
+    "en": "6 cupcakes · 265°F for 30 minutes + 300°F for 15 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": {
+              "zh": "1 个",
+              "en": "1 egg"
+            }
+          }
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "13 g"
+        },
+        {
+          "name": {
+            "zh": "奶粉",
+            "en": "Milk powder"
+          },
+          "amount": "2 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "3 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": {
+            "zh": "约 1 g，待确认",
+            "en": "About 1 g, to be confirmed"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "11 g"
+        },
+        {
+          "name": {
+            "zh": "油",
+            "en": "Oil"
+          },
+          "amount": "10 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "水浴法，先以 265°F 烤 30 分钟，再以 300°F 烤 15 分钟。",
+      "en": "Bake in a water bath, first at 265°F for 30 minutes, then at 300°F for 15 minutes."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "盐原记为「一点」，后补充为「可能 1 g」，保留待确认标记。手写记录未注明搅拌、打发方法和水浴水量。",
+      "en": "Salt was originally recorded as “a little,” later amended to “possibly 1 g”; this remains unconfirmed. The handwritten record does not specify mixing or whipping methods, or the amount of water in the water bath."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "water-bath-cupcakes"
+}

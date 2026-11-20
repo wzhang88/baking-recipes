@@ -1,0 +1,107 @@
+{
+  "id": "sea-salt-rolls",
+  "category": "bread",
+  "status": "planned",
+  "title": {
+    "zh": "日式海盐牛角面包",
+    "en": "Japanese Salt Butter Rolls"
+  },
+  "summary": {
+    "zh": "8 个 · 425°F · 13–17 分钟",
+    "en": "8 rolls · 425°F · 13–17 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "高筋面粉",
+            "en": "Bread flour"
+          },
+          "amount": "220 g"
+        },
+        {
+          "name": {
+            "zh": "中筋面粉",
+            "en": "All-purpose flour"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "水",
+            "en": "Water"
+          },
+          "amount": "155 g"
+        },
+        {
+          "name": {
+            "zh": "糖",
+            "en": "Sugar"
+          },
+          "amount": "12 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "4 g"
+        },
+        {
+          "name": {
+            "zh": "即发干酵母",
+            "en": "Instant dry yeast"
+          },
+          "amount": "3 g"
+        },
+        {
+          "name": {
+            "zh": "黄油（面团）",
+            "en": "Butter (for dough)"
+          },
+          "amount": "12 g"
+        },
+        {
+          "name": {
+            "zh": "有盐黄油（包馅）",
+            "en": "Salted butter (for filling)"
+          },
+          "amount": "32–40 g"
+        },
+        {
+          "name": {
+            "zh": "海盐（表面）",
+            "en": "Sea salt (for topping)"
+          },
+          "amount": {
+            "zh": "少许",
+            "en": "A pinch"
+          }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "揉成均匀有弹性的面团，发酵后分成 8 份，松弛。",
+      "en": "Knead into a smooth, elastic dough. Let it rise, divide into 8 pieces, and let them rest."
+    },
+    {
+      "zh": "擀成长三角，从宽端包入每份 4–5 g 冰凉的黄油，卷成牛角。放在有边烤盘上做最后发酵。",
+      "en": "Roll each piece into a long triangle. Place 4–5 g chilled butter at the wide end and roll into a crescent. Arrange on a rimmed baking sheet for the final proof."
+    },
+    {
+      "zh": "撒少许海盐，预热至 425°F，烤 13–17 分钟，观察表面上色。",
+      "en": "Sprinkle with a little sea salt. Preheat to 425°F and bake for 13–17 minutes, watching for surface browning."
+    }
+  ],
+  "notes": [],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "sea-salt-rolls"
+}

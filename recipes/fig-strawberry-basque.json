@@ -1,0 +1,107 @@
+{
+  "id": "fig-strawberry-basque",
+  "category": "cake",
+  "status": "baked",
+  "title": {
+    "zh": "无花果草莓巴斯克",
+    "en": "Fig and Strawberry Basque Cheesecake"
+  },
+  "summary": {
+    "zh": "6 寸 · 酸奶版 · 玉米淀粉 10 g",
+    "en": "6-inch · yogurt version · 10 g cornstarch"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "低脂奶油奶酪",
+            "en": "Reduced-fat cream cheese"
+          },
+          "amount": "226 g"
+        },
+        {
+          "name": {
+            "zh": "全脂酸奶",
+            "en": "Whole-milk yogurt"
+          },
+          "amount": "120 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Eggs"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": "2 eggs"
+          }
+        },
+        {
+          "name": {
+            "zh": "无花果酱（Fig Butter）",
+            "en": "Fig butter"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "草莓酱",
+            "en": "Strawberry jam"
+          },
+          "amount": {
+            "zh": "2 小勺",
+            "en": "2 teaspoons"
+          },
+          "detail": {
+            "zh": "勺的大小未注明",
+            "en": "Spoon size not specified"
+          },
+          "certainty": "unconfirmed"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "10 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "蛋糕糊用少量淡奶油和全脂酸奶调配，用无花果酱和草莓酱提供甜味。",
+      "en": "The batter uses a small amount of heavy cream and whole-milk yogurt; fig butter and strawberry jam provide the sweetness."
+    },
+    {
+      "zh": "旧总结记录为 400°F 烤 10 分钟，再以 425°F 烤 17 分钟。",
+      "en": "An earlier summary records baking at 400°F for 10 minutes, then at 425°F for 17 minutes."
+    },
+    {
+      "zh": "放凉后冷藏至少 4 小时再切，是旧总结里的做法。",
+      "en": "The earlier summary says to cool, then refrigerate for at least 4 hours before slicing."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "当时聊天提到一开始是 425°F，前 10 分钟也记过 400°F。实际调温顺序待核。",
+      "en": "The conversation at the time mentioned starting at 425°F; 400°F for the first 10 minutes was also recorded. The actual temperature sequence needs confirmation.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "fig-strawberry-basque"
+}

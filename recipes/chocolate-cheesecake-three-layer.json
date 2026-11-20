@@ -1,0 +1,329 @@
+{
+  "id": "chocolate-cheesecake-three-layer",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "6 寸三层巧克力芝士蛋糕",
+    "en": "6-Inch Three-Layer Chocolate Cheesecake"
+  },
+  "summary": {
+    "zh": "巧克力海绵 · 巧克力烤芝士 · 马斯卡彭或草莓慕斯",
+    "en": "Chocolate sponge · baked chocolate cheesecake · mascarpone or strawberry mousse"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "巧克力海绵蛋糕（主配方）",
+        "en": "巧克力海绵蛋糕（主配方）"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "全蛋",
+            "en": "Whole eggs"
+          },
+          "amount": {
+            "zh": "2 个",
+            "en": "2 eggs"
+          }
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "可可粉",
+            "en": "Cocoa powder"
+          },
+          "amount": "10 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "25 g"
+        },
+        {
+          "name": {
+            "zh": "植物油",
+            "en": "Vegetable oil"
+          },
+          "amount": "25 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "巧克力烤芝士层",
+        "en": "巧克力烤芝士层"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": "140 g"
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": "30 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "黑巧克力",
+            "en": "Dark chocolate"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "4 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "第三层：马斯卡彭慕斯（选项 A）",
+        "en": "第三层：马斯卡彭慕斯（选项 A）"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "马斯卡彭奶酪",
+            "en": "Mascarpone"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "蛋黄",
+            "en": "Egg yolk"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg yolk"
+          }
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "140 g"
+        },
+        {
+          "name": {
+            "zh": "吉利丁片",
+            "en": "Gelatin sheet"
+          },
+          "amount": "4 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "第三层：草莓慕斯（选项 B）",
+        "en": "第三层：草莓慕斯（选项 B）"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "奶油奶酪",
+            "en": "Cream cheese"
+          },
+          "amount": "120 g"
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "草莓果酱",
+            "en": "Strawberry jam"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "吉利丁片",
+            "en": "Gelatin sheet"
+          },
+          "amount": "5 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "淋面（可选）",
+        "en": "Optional ganache topping"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "巧克力",
+            "en": "Chocolate"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": "60 g"
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh": "另记的一蛋巧克力海绵配方",
+        "en": "Separately noted one-egg chocolate sponge"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "全蛋",
+            "en": "Whole egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "细砂糖",
+            "en": "Caster sugar"
+          },
+          "amount": "25 g"
+        },
+        {
+          "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": "25 g"
+        },
+        {
+          "name": {
+            "zh": "可可粉",
+            "en": "Cocoa powder"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "15 g"
+        },
+        {
+          "name": {
+            "zh": "植物油",
+            "en": "Vegetable oil"
+          },
+          "amount": "15 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "巧克力海绵主配方：165°C（329°F）烤 30 分钟。",
+      "en": "Main chocolate sponge: Bake at 165°C (329°F) for 30 minutes."
+    },
+    {
+      "zh": "巧克力烤芝士层：150°C（302°F）烤 25–28 分钟；出炉时中心保持轻微晃动即可。",
+      "en": "Baked chocolate cheesecake layer: Bake at 150°C (302°F) for 25–28 minutes; the center should still wobble slightly when removed from the oven."
+    },
+    {
+      "zh": "马斯卡彭慕斯选项：冷藏 4 小时以上，建议过夜后脱模。",
+      "en": "Mascarpone mousse option: Chill for at least 4 hours; overnight chilling is recommended before unmolding."
+    },
+    {
+      "zh": "草莓慕斯选项：冷藏 4 小时以上，最好隔夜。",
+      "en": "Strawberry mousse option: Chill for at least 4 hours, preferably overnight."
+    },
+    {
+      "zh": "三层暂整理为巧克力海绵底、巧克力烤芝士层，以及二选一的马斯卡彭慕斯或草莓慕斯。脱模前建议确认各层已充分定型。",
+      "en": "The three layers are provisionally organized as a chocolate sponge base, baked chocolate cheesecake layer, and either mascarpone mousse or strawberry mousse. Make sure each layer is fully set before unmolding."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "另记的一蛋巧克力海绵配方看起来像较小份的海绵蛋糕配方，但用途和烘烤温度、时间未注明，先独立保留，勿与主配方混用。",
+      "en": "The separately noted one-egg chocolate sponge looks like a smaller batch, but its purpose and baking temperature and time are not recorded. It is kept separate; do not combine it with the main recipe.",
+      "certainty": "unconfirmed"
+    },
+    {
+      "zh": "按「三层」暂整理为：巧克力海绵底、巧克力烤芝士层，以及二选一的马斯卡彭慕斯或草莓慕斯。慕斯的制作顺序、蛋黄是否加热、各层组装步骤及每层冷却后再叠放的安排尚未记录；脱模前建议确认各层已充分定型。以上结构按现有描述整理，待本人确认。",
+      "en": "Based on the “three-layer” description, this is provisionally organized as a chocolate sponge base, baked chocolate cheesecake layer, and a choice of mascarpone or strawberry mousse. The mousse method, whether the yolk is heated, assembly steps, and whether each layer should cool before stacking have not been recorded. Confirm that the layers are fully set before unmolding. This structure follows the current description and still needs confirmation.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "chocolate-cheesecake-three-layer"
+}

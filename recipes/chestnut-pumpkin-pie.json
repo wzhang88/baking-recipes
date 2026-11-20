@@ -1,0 +1,97 @@
+{
+  "id": "chestnut-pumpkin-pie",
+  "category": "cake",
+  "status": "baked",
+  "title": {
+    "zh": "栗子南瓜派",
+    "en": "Chestnut Pumpkin Pie"
+  },
+  "summary": {
+    "zh": "Whole Foods 现成派皮 · 170°C／约 340°F · 40 分钟",
+    "en": "Ready-made Whole Foods pie crust · 170°C / about 340°F · 40 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "原配方材料",
+        "en": "Original recipe ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "栗子泥",
+            "en": "Chestnut purée"
+          },
+          "amount": "100 g"
+        },
+        {
+          "name": {
+            "zh": "南瓜泥",
+            "en": "Pumpkin purée"
+          },
+          "amount": "300 g"
+        },
+        {
+          "name": {
+            "zh": "玉米淀粉",
+            "en": "Cornstarch"
+          },
+          "amount": "8 g"
+        },
+        {
+          "name": {
+            "zh": "鸡蛋",
+            "en": "Egg"
+          },
+          "amount": {
+            "zh": "1 个",
+            "en": "1 egg"
+          }
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "40 g"
+        },
+        {
+          "name": {
+            "zh": "Whole Foods 购买的现成派皮",
+            "en": "Ready-made pie crust purchased at Whole Foods"
+          },
+          "amount": "按模具准备"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "派馅配现成派皮，170°C／约 340°F 烤 40 分钟。派皮预处理依所用产品包装要求。",
+      "en": "Fill the ready-made pie crust and bake at 170°C / about 340°F for 40 minutes. Prepare the crust according to its package instructions."
+    },
+    {
+      "zh": "上次成品甜度不足，下次需要增加糖量。",
+      "en": "The last pie was not sweet enough; increase the sugar next time."
+    },
+    {
+      "zh": "先试额外加入 30 g 糖。先与栗子泥、南瓜泥拌匀，在加入鸡蛋前尝甜度，再按所用栗子泥和南瓜泥的甜度调整。",
+      "en": "First try adding an extra 30 g sugar. Mix it with the chestnut and pumpkin purées, taste before adding the egg, then adjust according to the sweetness of the purées."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "原手写配方未列额外糖量。栗子泥当时是否含糖已记不清，保留为不确定。派皮品牌及尺寸待补。",
+      "en": "The handwritten recipe does not list additional sugar. It is unclear whether the chestnut purée used was sweetened. The crust brand and size still need to be recorded.",
+      "certainty": "unconfirmed"
+    },
+    {
+      "zh": "额外 30 g 糖为本次整理时提出的试做建议，尚未验证。原始烘烤时间也需结合实际模具和派皮观察。",
+      "en": "The extra 30 g sugar is a trial suggestion added during transcription and has not been tested. Check the baking time against the actual pan and crust.",
+      "certainty": "unconfirmed"
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "chestnut-pumpkin-pie"
+}

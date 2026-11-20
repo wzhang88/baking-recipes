@@ -1,0 +1,105 @@
+{
+  "id": "matcha-protein-bars",
+  "category": "snack",
+  "status": "planned",
+  "title": {
+    "zh": "抹茶开心果蛋白棒",
+    "en": "Matcha Pistachio Protein Bars"
+  },
+  "summary": {
+    "zh": "6 根 · 320°F（160°C）· 15–20 分钟",
+    "en": "6 bars · 320°F (160°C) · 15–20 minutes"
+  },
+  "sections": [
+    {
+      "title": {
+        "zh": "材料",
+        "en": "Ingredients"
+      },
+      "ingredients": [
+        {
+          "name": {
+            "zh": "乳清分离蛋白粉",
+            "en": "Whey protein isolate"
+          },
+          "amount": "60 g"
+        },
+        {
+          "name": {
+            "zh": "燕麦粉",
+            "en": "Oat flour"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "加糖开心果酱",
+            "en": "Sweetened pistachio paste"
+          },
+          "amount": "45 g"
+        },
+        {
+          "name": {
+            "zh": "蛋液",
+            "en": "Beaten egg"
+          },
+          "amount": "50 g"
+        },
+        {
+          "name": {
+            "zh": "牛奶",
+            "en": "Milk"
+          },
+          "amount": "50–70 g"
+        },
+        {
+          "name": {
+            "zh": "抹茶粉",
+            "en": "Matcha powder"
+          },
+          "amount": "5 g"
+        },
+        {
+          "name": {
+            "zh": "开心果碎",
+            "en": "Chopped pistachios"
+          },
+          "amount": "20 g"
+        },
+        {
+          "name": {
+            "zh": "泡打粉",
+            "en": "Baking powder"
+          },
+          "amount": "2 g"
+        },
+        {
+          "name": {
+            "zh": "盐",
+            "en": "Salt"
+          },
+          "amount": "1 g"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "zh": "把蛋液和开心果酱搅匀，加入混合好的干料，牛奶分次加。拌入开心果碎，铺平。",
+      "en": "Mix the beaten egg with the pistachio paste. Add the combined dry ingredients, adding the milk gradually. Fold in the chopped pistachios and spread the mixture evenly."
+    },
+    {
+      "zh": "预热至 320°F（160°C），烤 15–20 分钟。中心刚凝固时取出，放凉切成 6 根。",
+      "en": "Preheat to 320°F (160°C) and bake for 15–20 minutes. Remove when the center has just set; cool and cut into 6 bars."
+    }
+  ],
+  "notes": [
+    {
+      "zh": "想增加颗粒感时，可用 40 g 燕麦粉加 10 g 燕麦片。",
+      "en": "For a more textured result, use 40 g oat flour plus 10 g rolled oats."
+    }
+  ],
+  "photos": [],
+  "trials": [],
+  "legacyAnchor": "matcha-protein-bars"
+}
