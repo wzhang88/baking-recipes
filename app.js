@@ -33,7 +33,7 @@ const recipes = [...document.querySelectorAll('.recipe')].map(element => {
     originalBody: [...body.childNodes].map(node => node.cloneNode(true)),
     originalStatus: summary.querySelector('.status').textContent.trim(),
     originalText: element.textContent.toLocaleLowerCase().replace(/\s+/g, ''),
-    translatedText: '', data: null
+    translatedText: '', data: null, scaleChoice: null
   };
 });
 
@@ -52,45 +52,113 @@ function localized(value, lang = language) {
   return typeof value === 'string' ? value : value?.[lang] ?? value?.zh ?? '';
 }
 
-function renderEnglish(recipe) {
+function scaleFactor(recipe) {
+  const scale = recipe.data?.scale;
+  if (!scale) return 1;
+  if (scale.type === 'round_pan') {
+    const diameter = recipe.scaleChoice ?? scale.baseDiameterIn;
+    return (diameter / scale.baseDiameterIn) ** 2 / scale.basePanCount;
+  }
+  return recipe.scaleChoice ?? 1;
+}
+
+function formatQuantity(ingredient, factor, lang) {
+  const original = localized(ingredient.amount, lang);
+  if (factor === 1) return original;
+  if (!ingredient.quantity) return original + (lang === 'en' ? ' · original amount; adjust by taste' : ' · 原记录，未换算');
+  const { value, unit, approxGramPerEgg } = ingredient.quantity;
+  const scaled = value * factor;
+  const rounded = Math.round(scaled * 10) / 10;
+  if (unit === 'egg') {
+    const eggs = lang === 'en' ? `${rounded} eggs` : `${rounded} 个`;
+    const grams = Math.round(scaled * approxGramPerEgg);
+    return lang === 'en' ? `about ${eggs} (about ${grams} g beaten egg)` : `约 ${eggs}（打散后约 ${grams} g）`;
+  }
+  return `${rounded} ${unit}`;
+}
+
+function scaleControl(recipe, lang) {
+  const scale = recipe.data.scale;
+  if (!scale) return null;
+  const control = node('div', null, 'scale-control');
+  const label = node('label', lang === 'en' ? 'Scale ingredients' : '换算材料');
+  const select = node('select');
+  select.setAttribute('aria-label', label.textContent);
+  const choices = scale.type === 'round_pan' ? scale.diametersIn : scale.multipliers;
+  const current = recipe.scaleChoice ?? (scale.type === 'round_pan' ? scale.baseDiameterIn : 1);
+  for (const choice of choices) {
+    let text;
+    if (scale.type === 'round_pan') text = lang === 'en' ? `One ${choice}-inch round pan` : `一个 ${choice} 寸圆模`;
+    else {
+      const count = scale.baseYield.count * choice;
+      text = lang === 'en' ? `${count} × 450 g loaf pan${count === 1 ? '' : 's'}` : `${count} 个 450 g 吐司模`;
+    }
+    const option = node('option', text);
+    option.value = String(choice);
+    select.append(option);
+  }
+  select.value = String(current);
+  select.addEventListener('change', () => {
+    recipe.scaleChoice = Number(select.value);
+    renderStructured(recipe, language);
+  });
+  const warning = node('p', lang === 'en'
+    ? 'Ingredients only. The method, oven temperature and baking time describe the original batch; judge doneness in your oven. One egg is estimated as 50 g without the shell.'
+    : '只换算已注明数字的材料。步骤、烤温和时间仍是原配方记录，需按模具与上色判断；鸡蛋按去壳每个约 50 g 估算。', 'scale-warning');
+  control.append(label, select, warning);
+  return control;
+}
+
+function renderStructured(recipe, lang) {
   const { element, summary, body, originalStatus, data } = recipe;
-  const labels = node('div', null, 'labels');
-  labels.append(node('span', categoryNames[element.dataset.category] || element.dataset.category));
-  const status = node('span', statusNames[originalStatus] || 'Recipe notes', 'status');
-  if (element.dataset.status === 'planned') status.classList.add('planned');
-  labels.append(status);
-  summary.replaceChildren(labels, node('h2', data.title.en), node('p', data.summary.en, 'metadata'));
+  if (lang === 'en') {
+    const labels = node('div', null, 'labels');
+    labels.append(node('span', categoryNames[element.dataset.category] || element.dataset.category));
+    const status = node('span', statusNames[originalStatus] || 'Recipe notes', 'status');
+    if (element.dataset.status === 'planned') status.classList.add('planned');
+    labels.append(status);
+    summary.replaceChildren(labels, node('h2', data.title.en), node('p', data.summary.en, 'metadata'));
+  } else {
+    summary.replaceChildren(...recipe.originalSummary.map(child => child.cloneNode(true)));
+  }
 
   const columns = node('div', null, 'columns');
   const ingredients = node('div');
   const method = node('div');
-  ingredients.append(node('h3', 'Ingredients'));
+  ingredients.append(node('h3', lang === 'en' ? 'Ingredients' : '材料'));
+  const factor = scaleFactor(recipe);
   for (const section of data.sections) {
-    ingredients.append(node('h4', localized(section.title, 'en')));
+    ingredients.append(node('h4', localized(section.title, lang)));
     const list = node('dl');
     for (const ingredient of section.ingredients) {
       const row = node('div');
-      row.append(node('dt', localized(ingredient.name, 'en')),
-        node('dd', [localized(ingredient.amount, 'en'), localized(ingredient.detail, 'en')].filter(Boolean).join(' · ')));
+      row.append(node('dt', localized(ingredient.name, lang)),
+        node('dd', [formatQuantity(ingredient, factor, lang), localized(ingredient.detail, lang)].filter(Boolean).join(' · ')));
       list.append(row);
     }
     ingredients.append(list);
   }
   if (data.steps.length) {
-    method.append(node('h3', 'Method & baking record'));
+    method.append(node('h3', lang === 'en' ? 'Method & baking record' : '做法与烘烤记录'));
     const list = node('ol');
-    for (const step of data.steps) list.append(node('li', localized(step, 'en')));
+    for (const step of data.steps) list.append(node('li', localized(step, lang)));
     method.append(list);
   }
   if (data.notes.length) {
-    method.append(node('h3', 'Notes'));
-    for (const note of data.notes) method.append(node('p', localized(note, 'en'), 'note'));
+    method.append(node('h3', lang === 'en' ? 'Notes' : '笔记'));
+    for (const note of data.notes) method.append(node('p', localized(note, lang), 'note'));
   }
   columns.append(ingredients, method);
-  body.replaceChildren(columns);
+  const control = scaleControl(recipe, lang);
+  body.replaceChildren(...(control ? [control, columns] : [columns]));
+}
+
+function renderEnglish(recipe) {
+  renderStructured(recipe, 'en');
 }
 
 function renderChinese(recipe) {
+  if (recipe.data?.scale) return renderStructured(recipe, 'zh');
   recipe.summary.replaceChildren(...recipe.originalSummary.map(child => child.cloneNode(true)));
   recipe.body.replaceChildren(...recipe.originalBody.map(child => child.cloneNode(true)));
 }
@@ -108,6 +176,9 @@ async function loadRecipeData() {
         recipes[index].data = data;
         recipes[index].translatedText = JSON.stringify(data).toLocaleLowerCase().replace(/\s+/g, '');
       });
+      if (language === 'zh') for (const recipe of recipes) {
+        if (recipe.data.scale) renderChinese(recipe);
+      }
     }).catch(error => {
       recipeDataPromise = undefined;
       throw error;

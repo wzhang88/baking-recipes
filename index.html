@@ -39,6 +39,7 @@ main { padding-block: 1.6rem 4rem; }
 .search label { display: block; font-weight: 650; margin-bottom: .25rem; }
 input, button { font: inherit; }
 input { width: 100%; min-height: 2.8rem; border: 1px solid #a98e84; border-radius: .45rem; background: var(--card); color: var(--ink); padding: .4rem .75rem; }
+select { font: inherit; min-height: 2.6rem; max-width: 100%; border: 1px solid #a98e84; border-radius: .45rem; background: var(--card); color: var(--ink); padding: .35rem .7rem; }
 .filters { display: flex; flex-wrap: wrap; gap: .42rem; }
 button { min-height: 2.8rem; border: 1px solid #a98e84; border-radius: 2rem; padding: .35rem .8rem; background: transparent; color: var(--ink); cursor: pointer; }
 button[aria-pressed="true"] { background: var(--plum); border-color: var(--plum); color: white; }
@@ -56,6 +57,9 @@ details[open] summary::after { transform: rotate(225deg); margin: .25rem .2rem 0
 h2 { grid-column: 1; font-size: clamp(1.35rem, 3vw, 1.85rem); line-height: 1.25; margin: 0; }
 .metadata { grid-column: 1; color: var(--muted); margin: .05rem 0 0; font-size: .94rem; }
 .recipe-body { border-top: 1px solid var(--line); padding: 1.25rem clamp(.85rem, 3vw, 1.6rem) 1.5rem; }
+.scale-control { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: .85rem 1rem; margin: 0 0 1.2rem; border: 1px solid var(--line); border-radius: .6rem; background: #fcf2e5; }
+.scale-control label { font-weight: 700; }
+.scale-warning { flex-basis: 100%; margin: 0; color: var(--muted); font-size: .86rem; }
 .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2.3rem; }
 h3 { margin: 0 0 .5rem; font-size: 1.08rem; }
 h4 { margin: .85rem 0 .25rem; font-size: .95rem; color: var(--plum); }
