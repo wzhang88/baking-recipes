@@ -103,8 +103,8 @@ function scaleControl(recipe, lang) {
     renderStructured(recipe, language);
   });
   const warning = node('p', lang === 'en'
-    ? 'Ingredients only. The method, oven temperature and baking time describe the original batch; judge doneness in your oven. One egg is estimated as 50 g without the shell.'
-    : '只换算已注明数字的材料。步骤、烤温和时间仍是原配方记录，需按模具与上色判断；鸡蛋按去壳每个约 50 g 估算。', 'scale-warning');
+    ? `Scaled from ${scale.type === 'round_pan' ? `${scale.baseDiameterIn}-inch` : `${scale.baseYield.count} loaves`}. Ingredients only; the method, oven temperature and baking time describe the original batch. ${scale.type === 'round_pan' ? 'One egg is estimated as 50 g without the shell.' : 'Judge proofing and doneness in your oven.'}`
+    : `基于${scale.type === 'round_pan' ? `${scale.baseDiameterIn} 寸` : `${scale.baseYield.count} 条`}原方换算材料；步骤、烤温和时间仍为原记录。${scale.type === 'round_pan' ? '鸡蛋按去壳每个约 50 g 估算。' : '发酵与出炉状态按实际观察。'}`, 'scale-warning');
   control.append(label, select, warning);
   return control;
 }
@@ -128,7 +128,8 @@ function renderStructured(recipe, lang) {
   ingredients.append(node('h3', lang === 'en' ? 'Ingredients' : '材料'));
   const factor = scaleFactor(recipe);
   for (const section of data.sections) {
-    ingredients.append(node('h4', localized(section.title, lang)));
+    const sectionTitle = localized(section.title, lang);
+    if (sectionTitle !== (lang === 'en' ? 'Ingredients' : '材料')) ingredients.append(node('h4', sectionTitle));
     const list = node('dl');
     for (const ingredient of section.ingredients) {
       const row = node('div');
@@ -139,7 +140,7 @@ function renderStructured(recipe, lang) {
     ingredients.append(list);
   }
   if (data.steps.length) {
-    method.append(node('h3', lang === 'en' ? 'Method & baking record' : '做法与烘烤记录'));
+    method.append(node('h3', lang === 'en' ? 'Original method & baking record' : '原方做法与烘烤记录'));
     const list = node('ol');
     for (const step of data.steps) list.append(node('li', localized(step, lang)));
     method.append(list);
