@@ -22,21 +22,33 @@
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "200 g"
+          "amount": "200 g",
+          "quantity": {
+            "value": 200,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "200 g"
+          "amount": "200 g",
+          "quantity": {
+            "value": 200,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -46,6 +58,12 @@
           "amount": {
             "zh": "4 个",
             "en": "4 egg yolks"
+          },
+          "quantity": {
+            "value": 4,
+            "unit": "egg",
+            "kind": "yolk",
+            "approxGramPerEgg": 18
           }
         },
         {
@@ -56,6 +74,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg white"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "white",
+            "approxGramPerEgg": 30
           }
         },
         {
@@ -63,7 +87,11 @@
             "zh": "炼乳",
             "en": "Sweetened condensed milk"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -110,5 +138,20 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

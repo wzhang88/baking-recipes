@@ -22,28 +22,44 @@
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "58 g"
+          "amount": "58 g",
+          "quantity": {
+            "value": 58,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "油",
             "en": "Oil"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "16 g"
+          "amount": "16 g",
+          "quantity": {
+            "value": 16,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -53,6 +69,12 @@
           "amount": {
             "zh": "5 个",
             "en": "5 eggs"
+          },
+          "quantity": {
+            "value": 5,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -70,7 +92,11 @@
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "70 g"
+          "amount": "70 g",
+          "quantity": {
+            "value": 70,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -95,21 +121,33 @@
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "草莓酱",
             "en": "Strawberry jam"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "奶油奶酪",
             "en": "Cream cheese"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -145,5 +183,14 @@
   "displayStatus": {
     "zh": "手写配方已核对",
     "en": "Handwritten recipe reviewed"
+  },
+  "scale": {
+    "type": "round_pan",
+    "baseDiameterIn": 8,
+    "basePanCount": 1,
+    "diametersIn": [
+      6,
+      8
+    ]
   }
 }

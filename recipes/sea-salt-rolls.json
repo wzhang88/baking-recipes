@@ -22,56 +22,89 @@
             "zh": "高筋面粉",
             "en": "Bread flour"
           },
-          "amount": "220 g"
+          "amount": "220 g",
+          "quantity": {
+            "value": 220,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "中筋面粉",
             "en": "All-purpose flour"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "水",
             "en": "Water"
           },
-          "amount": "155 g"
+          "amount": "155 g",
+          "quantity": {
+            "value": 155,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "12 g"
+          "amount": "12 g",
+          "quantity": {
+            "value": 12,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "4 g"
+          "amount": "4 g",
+          "quantity": {
+            "value": 4,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "即发干酵母",
             "en": "Instant dry yeast"
           },
-          "amount": "3 g"
+          "amount": "3 g",
+          "quantity": {
+            "value": 3,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄油（面团）",
             "en": "Butter (for dough)"
           },
-          "amount": "12 g"
+          "amount": "12 g",
+          "quantity": {
+            "value": 12,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "有盐黄油（包馅）",
             "en": "Salted butter (for filling)"
           },
-          "amount": "32–40 g"
+          "amount": "32–40 g",
+          "quantity": {
+            "min": 32,
+            "max": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -107,5 +140,20 @@
   "displayStatus": {
     "zh": "待试做",
     "en": "To try"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 8,
+      "unit": {
+        "zh": "个面包",
+        "en": "rolls"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

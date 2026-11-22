@@ -22,28 +22,44 @@
             "zh": "蛋清",
             "en": "Egg white"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖粉（打发蛋清）",
             "en": "Powdered sugar (for whipping the egg white)"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "杏仁粉",
             "en": "Almond flour"
           },
-          "amount": "65 g"
+          "amount": "65 g",
+          "quantity": {
+            "value": 65,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖粉（与杏仁粉混合）",
             "en": "Powdered sugar (to mix with the almond flour)"
           },
-          "amount": "80 g"
+          "amount": "80 g",
+          "quantity": {
+            "value": 80,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -58,28 +74,44 @@
             "zh": "Trader Joe’s 桃子味 whipped cream cheese",
             "en": "Trader Joe’s peach-flavored whipped cream cheese"
           },
-          "amount": "150 g"
+          "amount": "150 g",
+          "quantity": {
+            "value": 150,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "80 g"
+          "amount": "80 g",
+          "quantity": {
+            "value": 80,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖粉",
             "en": "Powdered sugar"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "软化黄油",
             "en": "Softened butter"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -132,5 +164,20 @@
   "displayStatus": {
     "zh": "已试做",
     "en": "Baked"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 20,
+      "unit": {
+        "zh": "个夹馅马卡龙（约 40 片外壳）",
+        "en": "filled macarons (about 40 shells)"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

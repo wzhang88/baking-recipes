@@ -22,21 +22,33 @@
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "75 g"
+          "amount": "75 g",
+          "quantity": {
+            "value": 75,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -53,7 +65,11 @@
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "1 g"
+          "amount": "1 g",
+          "quantity": {
+            "value": 1,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -78,35 +94,55 @@
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "75 g"
+          "amount": "75 g",
+          "quantity": {
+            "value": 75,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "2 g"
+          "amount": "2 g",
+          "quantity": {
+            "value": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "1 g"
+          "amount": "1 g",
+          "quantity": {
+            "value": 1,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -134,5 +170,20 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

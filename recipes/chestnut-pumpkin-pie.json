@@ -22,21 +22,33 @@
             "zh": "栗子泥",
             "en": "Chestnut purée"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "南瓜泥",
             "en": "Pumpkin purée"
           },
-          "amount": "300 g"
+          "amount": "300 g",
+          "quantity": {
+            "value": 300,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "8 g"
+          "amount": "8 g",
+          "quantity": {
+            "value": 8,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -46,6 +58,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -53,7 +71,11 @@
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -97,5 +119,20 @@
   "displayStatus": {
     "zh": "已试做",
     "en": "Baked"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

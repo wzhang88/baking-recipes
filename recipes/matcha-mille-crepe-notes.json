@@ -22,7 +22,11 @@
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "95 g"
+          "amount": "95 g",
+          "quantity": {
+            "value": 95,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -39,7 +43,11 @@
             "zh": "抹茶粉",
             "en": "Matcha powder"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -57,21 +65,33 @@
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "420 g"
+          "amount": "420 g",
+          "quantity": {
+            "value": 420,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄油",
             "en": "Butter"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "白砂糖",
             "en": "Granulated sugar"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -96,21 +116,33 @@
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "700 g"
+          "amount": "700 g",
+          "quantity": {
+            "value": 700,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "奶油奶酪",
             "en": "Cream cheese"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "35 g"
+          "amount": "35 g",
+          "quantity": {
+            "value": 35,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -140,5 +172,20 @@
   "displayStatus": {
     "zh": "备忘录 · 步骤待补",
     "en": "Notes · method incomplete"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

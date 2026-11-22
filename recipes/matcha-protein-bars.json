@@ -22,63 +22,100 @@
             "zh": "乳清分离蛋白粉",
             "en": "Whey protein isolate"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "燕麦粉",
             "en": "Oat flour"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "加糖开心果酱",
             "en": "Sweetened pistachio paste"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "蛋液",
             "en": "Beaten egg"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "50–70 g"
+          "amount": "50–70 g",
+          "quantity": {
+            "min": 50,
+            "max": 70,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "抹茶粉",
             "en": "Matcha powder"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "开心果碎",
             "en": "Chopped pistachios"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "2 g"
+          "amount": "2 g",
+          "quantity": {
+            "value": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "1 g"
+          "amount": "1 g",
+          "quantity": {
+            "value": 1,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -105,5 +142,20 @@
   "displayStatus": {
     "zh": "待试做",
     "en": "To try"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 6,
+      "unit": {
+        "zh": "根",
+        "en": "bars"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

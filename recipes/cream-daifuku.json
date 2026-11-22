@@ -22,35 +22,55 @@
             "zh": "糯米粉",
             "en": "Glutinous rice flour"
           },
-          "amount": "120 g"
+          "amount": "120 g",
+          "quantity": {
+            "value": 120,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "180 g"
+          "amount": "180 g",
+          "quantity": {
+            "value": 180,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄油",
             "en": "Butter"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -95,7 +115,8 @@
           },
           "amount": "12.5%"
         }
-      ]
+      ],
+      "scalable": false
     },
     {
       "title": {
@@ -138,7 +159,8 @@
           },
           "amount": "20 g"
         }
-      ]
+      ],
+      "scalable": false
     }
   ],
   "steps": [
@@ -171,5 +193,20 @@
   "displayStatus": {
     "zh": "已试做",
     "en": "Baked"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

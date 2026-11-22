@@ -22,35 +22,55 @@
             "zh": "马斯卡彭（mascarpone，一盒）",
             "en": "Mascarpone (one container)"
           },
-          "amount": "227 g"
+          "amount": "227 g",
+          "quantity": {
+            "value": 227,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "200 g"
+          "amount": "200 g",
+          "quantity": {
+            "value": 200,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "蛋黄",
             "en": "Egg yolks"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "水",
             "en": "Water"
           },
-          "amount": "21 g"
+          "amount": "21 g",
+          "quantity": {
+            "value": 21,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -138,5 +158,20 @@
   "displayStatus": {
     "zh": "黑芝麻已试做",
     "en": "Black sesame version baked"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

@@ -22,28 +22,44 @@
             "zh": "无盐黄油",
             "en": "Unsalted butter, melted"
           },
-          "amount": "113 g，融化"
+          "amount": "113 g，融化",
+          "quantity": {
+            "value": 113,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄糖",
             "en": "Brown sugar"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "白砂糖",
             "en": "Granulated sugar"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "抹茶粉",
             "en": "Matcha powder"
           },
-          "amount": "8 g"
+          "amount": "8 g",
+          "quantity": {
+            "value": 8,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -53,6 +69,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -63,6 +85,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg yolk"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "yolk",
+            "approxGramPerEgg": 18
           }
         },
         {
@@ -70,42 +98,66 @@
             "zh": "中筋面粉",
             "en": "All-purpose flour"
           },
-          "amount": "140 g"
+          "amount": "140 g",
+          "quantity": {
+            "value": 140,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "小苏打",
             "en": "Baking soda"
           },
-          "amount": "2 g"
+          "amount": "2 g",
+          "quantity": {
+            "value": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "2 g"
+          "amount": "2 g",
+          "quantity": {
+            "value": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "海盐",
             "en": "Sea salt"
           },
-          "amount": "1 g"
+          "amount": "1 g",
+          "quantity": {
+            "value": 1,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -120,21 +172,33 @@
             "zh": "奶油奶酪",
             "en": "Cream cheese"
           },
-          "amount": "115 g"
+          "amount": "115 g",
+          "quantity": {
+            "value": 115,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖粉或白砂糖",
             "en": "Powdered sugar or granulated sugar"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -185,5 +249,20 @@
   "displayStatus": {
     "zh": "手写配方已核对",
     "en": "Handwritten recipe reviewed"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

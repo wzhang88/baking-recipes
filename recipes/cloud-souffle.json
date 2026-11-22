@@ -25,6 +25,12 @@
           "amount": {
             "zh": "3 个",
             "en": "3"
+          },
+          "quantity": {
+            "value": 3,
+            "unit": "egg",
+            "kind": "white",
+            "approxGramPerEgg": 30
           }
         },
         {
@@ -35,6 +41,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "yolk",
+            "approxGramPerEgg": 18
           }
         },
         {
@@ -42,7 +54,11 @@
             "zh": "柠檬汁",
             "en": "Lemon juice"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -52,6 +68,23 @@
           "amount": {
             "zh": "20 g：蛋黄 5 g，其余 15 g 用于蛋白",
             "en": "20 g: 5 g for the yolk, remaining 15 g for the whites"
+          },
+          "quantity": {
+            "parts": [
+              5,
+              15
+            ],
+            "unit": "g",
+            "partLabels": {
+              "zh": [
+                "蛋黄",
+                "蛋白"
+              ],
+              "en": [
+                "yolk",
+                "whites"
+              ]
+            }
           }
         },
         {
@@ -62,6 +95,23 @@
           "amount": {
             "zh": "13 g：蛋白 10 g，蛋黄 3 g",
             "en": "13 g: 10 g for the whites, 3 g for the yolk"
+          },
+          "quantity": {
+            "parts": [
+              10,
+              3
+            ],
+            "unit": "g",
+            "partLabels": {
+              "zh": [
+                "蛋白",
+                "蛋黄"
+              ],
+              "en": [
+                "whites",
+                "yolk"
+              ]
+            }
           }
         }
       ]
@@ -94,5 +144,20 @@
   "displayStatus": {
     "zh": "备忘录配方 · 烤温待核",
     "en": "Notes · oven temperature unconfirmed"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

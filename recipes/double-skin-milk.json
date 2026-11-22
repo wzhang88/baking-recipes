@@ -22,21 +22,33 @@
             "zh": "全脂牛奶",
             "en": "Whole milk"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "7 g"
+          "amount": "7 g",
+          "quantity": {
+            "value": 7,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -46,6 +58,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg white"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "white",
+            "approxGramPerEgg": 30
           }
         }
       ]
@@ -70,5 +88,20 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

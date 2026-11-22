@@ -22,35 +22,55 @@
             "zh": "King Arthur 高筋面粉",
             "en": "King Arthur bread flour"
           },
-          "amount": "510 g"
+          "amount": "510 g",
+          "quantity": {
+            "value": 510,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "Revolution 乳清分离蛋白粉",
             "en": "Revolution whey protein isolate"
           },
-          "amount": "37 g"
+          "amount": "37 g",
+          "quantity": {
+            "value": 37,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "Organic Valley Protein Plus 牛奶",
             "en": "Organic Valley Protein Plus milk"
           },
-          "amount": "150 g"
+          "amount": "150 g",
+          "quantity": {
+            "value": 150,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "Trader Joe’s 南瓜泥",
             "en": "Trader Joe’s pumpkin purée"
           },
-          "amount": "250 g"
+          "amount": "250 g",
+          "quantity": {
+            "value": 250,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "Bob’s Red Mill 脱脂奶粉",
             "en": "Bob’s Red Mill nonfat dry milk"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -60,6 +80,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -67,35 +93,55 @@
             "zh": "糯米粉",
             "en": "Glutinous rice flour"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄油",
             "en": "Butter"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "酵母",
             "en": "Yeast"
           },
-          "amount": "6 g"
+          "amount": "6 g",
+          "quantity": {
+            "value": 6,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "6 g"
+          "amount": "6 g",
+          "quantity": {
+            "value": 6,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -122,5 +168,20 @@
   "displayStatus": {
     "zh": "已试做",
     "en": "Baked"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

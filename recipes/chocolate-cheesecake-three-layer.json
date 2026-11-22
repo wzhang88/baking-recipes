@@ -25,6 +25,12 @@
           "amount": {
             "zh": "2 个",
             "en": "2 eggs"
+          },
+          "quantity": {
+            "value": 2,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -32,35 +38,55 @@
             "zh": "细砂糖",
             "en": "Caster sugar"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "45 g"
+          "amount": "45 g",
+          "quantity": {
+            "value": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "可可粉",
             "en": "Cocoa powder"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "25 g"
+          "amount": "25 g",
+          "quantity": {
+            "value": 25,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "植物油",
             "en": "Vegetable oil"
           },
-          "amount": "25 g"
+          "amount": "25 g",
+          "quantity": {
+            "value": 25,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -75,14 +101,22 @@
             "zh": "奶油奶酪",
             "en": "Cream cheese"
           },
-          "amount": "140 g"
+          "amount": "140 g",
+          "quantity": {
+            "value": 140,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "细砂糖",
             "en": "Caster sugar"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -92,6 +126,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -99,21 +139,33 @@
             "zh": "黑巧克力",
             "en": "Dark chocolate"
           },
-          "amount": "50 g"
+          "amount": "50 g",
+          "quantity": {
+            "value": 50,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "4 g"
+          "amount": "4 g",
+          "quantity": {
+            "value": 4,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -128,14 +180,22 @@
             "zh": "马斯卡彭奶酪",
             "en": "Mascarpone"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "细砂糖",
             "en": "Caster sugar"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -145,6 +205,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg yolk"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "yolk",
+            "approxGramPerEgg": 18
           }
         },
         {
@@ -152,14 +218,22 @@
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "140 g"
+          "amount": "140 g",
+          "quantity": {
+            "value": 140,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "吉利丁片",
             "en": "Gelatin sheet"
           },
-          "amount": "4 g"
+          "amount": "4 g",
+          "quantity": {
+            "value": 4,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -174,42 +248,66 @@
             "zh": "奶油奶酪",
             "en": "Cream cheese"
           },
-          "amount": "120 g"
+          "amount": "120 g",
+          "quantity": {
+            "value": 120,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "细砂糖",
             "en": "Caster sugar"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "草莓果酱",
             "en": "Strawberry jam"
           },
-          "amount": "40 g"
+          "amount": "40 g",
+          "quantity": {
+            "value": 40,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "20 g"
+          "amount": "20 g",
+          "quantity": {
+            "value": 20,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "吉利丁片",
             "en": "Gelatin sheet"
           },
-          "amount": "5 g"
+          "amount": "5 g",
+          "quantity": {
+            "value": 5,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -224,14 +322,22 @@
             "zh": "巧克力",
             "en": "Chocolate"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -286,7 +392,8 @@
           },
           "amount": "15 g"
         }
-      ]
+      ],
+      "scalable": false
     }
   ],
   "steps": [
@@ -329,5 +436,15 @@
   "displayStatus": {
     "zh": "配方已整理",
     "en": "Recipe organized"
+  },
+  "scale": {
+    "type": "round_pan",
+    "baseDiameterIn": 6,
+    "basePanCount": 1,
+    "diametersIn": [
+      4,
+      6,
+      8
+    ]
   }
 }

@@ -25,6 +25,10 @@
           "amount": {
             "zh": "以中筋面粉为例，原图附 King Arthur All-Purpose Flour",
             "en": "All-purpose flour is given as an example; the original image shows King Arthur All-Purpose Flour"
+          },
+          "quantity": {
+            "percentOfFlour": 100,
+            "unit": "g"
           }
         },
         {
@@ -35,6 +39,10 @@
           "amount": {
             "zh": "面粉的 70%",
             "en": "70% of flour weight"
+          },
+          "quantity": {
+            "percentOfFlour": 70,
+            "unit": "g"
           }
         },
         {
@@ -45,6 +53,10 @@
           "amount": {
             "zh": "面粉的 1%（已确认）",
             "en": "1% of flour weight (confirmed)"
+          },
+          "quantity": {
+            "percentOfFlour": 1,
+            "unit": "g"
           }
         },
         {
@@ -55,6 +67,10 @@
           "amount": {
             "zh": "面粉的 1%（已确认）",
             "en": "1% of flour weight (confirmed)"
+          },
+          "quantity": {
+            "percentOfFlour": 1,
+            "unit": "g"
           }
         },
         {
@@ -90,7 +106,11 @@
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "1.5 g"
+          "amount": "1.5 g",
+          "quantity": {
+            "value": 1.5,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -143,7 +163,8 @@
           },
           "certainty": "unconfirmed"
         }
-      ]
+      ],
+      "scalable": false
     }
   ],
   "steps": [],
@@ -165,5 +186,14 @@
   "displayStatus": {
     "zh": "备忘录 · 部分待核",
     "en": "Notes · some details unconfirmed"
+  },
+  "scale": {
+    "type": "flour",
+    "baseFlourGrams": 100,
+    "flourOptionsGrams": [
+      100,
+      250,
+      500
+    ]
   }
 }

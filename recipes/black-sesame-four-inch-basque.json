@@ -25,6 +25,10 @@
           "amount": {
             "zh": "150 g，先软化",
             "en": "150 g, softened first"
+          },
+          "quantity": {
+            "value": 150,
+            "unit": "g"
           }
         },
         {
@@ -40,14 +44,23 @@
             "zh": "原文两个用量并存",
             "en": "Both amounts appear in the original"
           },
-          "certainty": "unconfirmed"
+          "certainty": "unconfirmed",
+          "quantity": {
+            "min": 40,
+            "max": 45,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "150 g"
+          "amount": "150 g",
+          "quantity": {
+            "value": 150,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -57,6 +70,12 @@
           "amount": {
             "zh": "1 个",
             "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -64,21 +83,33 @@
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "6 g"
+          "amount": "6 g",
+          "quantity": {
+            "value": 6,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "4 g"
+          "amount": "4 g",
+          "quantity": {
+            "value": 4,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黑芝麻酱",
             "en": "Black sesame paste"
           },
-          "amount": "25 g"
+          "amount": "25 g",
+          "quantity": {
+            "value": 25,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -106,5 +137,20 @@
   "displayStatus": {
     "zh": "备忘录配方",
     "en": "Recipe notes"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 2,
+      "unit": {
+        "zh": "个 4 寸圆模",
+        "en": "4-inch round pans"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

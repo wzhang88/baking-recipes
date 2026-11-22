@@ -19,31 +19,64 @@
       "ingredients": [
         {
           "name": {
-            "zh": "低筋面粉与淡奶油",
-            "en": "Cake flour and heavy cream"
+            "zh": "低筋面粉",
+            "en": "Cake flour"
           },
-          "amount": "1:1"
+          "amount": {
+            "zh": "与淡奶油 1:1",
+            "en": "1:1 with heavy cream"
+          },
+          "quantity": {
+            "percentOfFlour": 100,
+            "unit": "g"
+          }
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": {
+            "zh": "与低筋面粉 1:1",
+            "en": "1:1 with cake flour"
+          },
+          "quantity": {
+            "percentOfFlour": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "10%"
+          "amount": "10%",
+          "quantity": {
+            "percentOfFlour": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "1%"
+          "amount": "1%",
+          "quantity": {
+            "percentOfFlour": 1,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "0.8%"
+          "amount": "0.8%",
+          "quantity": {
+            "percentOfFlour": 0.8,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -75,17 +108,53 @@
       "ingredients": [
         {
           "name": {
+            "zh": "低筋面粉",
+            "en": "Cake flour"
+          },
+          "amount": {
+            "zh": "与淡奶油 1:1",
+            "en": "1:1 with heavy cream"
+          },
+          "quantity": {
+            "percentOfFlour": 100,
+            "unit": "g"
+          }
+        },
+        {
+          "name": {
+            "zh": "淡奶油",
+            "en": "Heavy cream"
+          },
+          "amount": {
+            "zh": "与低筋面粉 1:1",
+            "en": "1:1 with cake flour"
+          },
+          "quantity": {
+            "percentOfFlour": 100,
+            "unit": "g"
+          }
+        },
+        {
+          "name": {
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "5%"
+          "amount": "5%",
+          "quantity": {
+            "percentOfFlour": 5,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "盐",
             "en": "Salt"
           },
-          "amount": "2%"
+          "amount": "2%",
+          "quantity": {
+            "percentOfFlour": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -122,5 +191,14 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "flour",
+    "baseFlourGrams": 100,
+    "flourOptionsGrams": [
+      100,
+      250,
+      500
+    ]
   }
 }

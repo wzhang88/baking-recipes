@@ -25,6 +25,12 @@
           "amount": {
             "zh": "6 个",
             "en": "6 eggs"
+          },
+          "quantity": {
+            "value": 6,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -97,14 +103,22 @@
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黄油",
             "en": "Butter"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -140,5 +154,20 @@
   "displayStatus": {
     "zh": "手写配方 · 部分待辨",
     "en": "Handwritten · some details unclear"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方（模具待核）",
+        "en": "original batch (pan to confirm)"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

@@ -24,10 +24,13 @@
           },
           "amount": {
             "zh": "1 个",
-            "en": {
-              "zh": "1 个",
-              "en": "1 egg"
-            }
+            "en": "1 egg"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -35,28 +38,44 @@
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "13 g"
+          "amount": "13 g",
+          "quantity": {
+            "value": 13,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "奶粉",
             "en": "Milk powder"
           },
-          "amount": "2 g"
+          "amount": "2 g",
+          "quantity": {
+            "value": 2,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "3 g"
+          "amount": "3 g",
+          "quantity": {
+            "value": 3,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -74,14 +93,22 @@
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "11 g"
+          "amount": "11 g",
+          "quantity": {
+            "value": 11,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "油",
             "en": "Oil"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         }
       ]
     }
@@ -104,5 +131,20 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 6,
+      "unit": {
+        "zh": "个纸杯蛋糕",
+        "en": "cupcakes"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

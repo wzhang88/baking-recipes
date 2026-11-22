@@ -22,21 +22,33 @@
             "zh": "红枣",
             "en": "Red dates"
           },
-          "amount": "250 g"
+          "amount": "250 g",
+          "quantity": {
+            "value": 250,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "水",
             "en": "Water"
           },
-          "amount": "300 g"
+          "amount": "300 g",
+          "quantity": {
+            "value": 300,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "黑糖",
             "en": "Brown sugar"
           },
-          "amount": "60 g"
+          "amount": "60 g",
+          "quantity": {
+            "value": 60,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -61,7 +73,11 @@
             "zh": "玉米油",
             "en": "Corn oil"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -70,10 +86,13 @@
           },
           "amount": {
             "zh": "9 个",
-            "en": {
-              "zh": "9 个",
-              "en": "9 eggs"
-            }
+            "en": "9 eggs"
+          },
+          "quantity": {
+            "value": 9,
+            "unit": "egg",
+            "kind": "whole",
+            "approxGramPerEgg": 50
           }
         },
         {
@@ -81,21 +100,33 @@
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "255 g"
+          "amount": "255 g",
+          "quantity": {
+            "value": 255,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "泡打粉",
             "en": "Baking powder"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖（打发蛋白）",
             "en": "Sugar (for whipping the egg whites)"
           },
-          "amount": "10 g"
+          "amount": "10 g",
+          "quantity": {
+            "value": 10,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -140,5 +171,20 @@
   "displayStatus": {
     "zh": "手写配方",
     "en": "Handwritten recipe"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }

@@ -25,6 +25,12 @@
           "amount": {
             "zh": "2 个",
             "en": "2"
+          },
+          "quantity": {
+            "value": 2,
+            "unit": "egg",
+            "kind": "yolk",
+            "approxGramPerEgg": 18
           }
         },
         {
@@ -32,21 +38,33 @@
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "28 g"
+          "amount": "28 g",
+          "quantity": {
+            "value": 28,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "150 g"
+          "amount": "150 g",
+          "quantity": {
+            "value": 150,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "14 g"
+          "amount": "14 g",
+          "quantity": {
+            "value": 14,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -68,7 +86,11 @@
             "zh": "黄油",
             "en": "Butter"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -86,6 +108,12 @@
           "amount": {
             "zh": "2 个",
             "en": "2"
+          },
+          "quantity": {
+            "value": 2,
+            "unit": "egg",
+            "kind": "white",
+            "approxGramPerEgg": 30
           }
         },
         {
@@ -93,35 +121,55 @@
             "zh": "糖",
             "en": "Sugar"
           },
-          "amount": "30 g"
+          "amount": "30 g",
+          "quantity": {
+            "value": 30,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "牛奶",
             "en": "Milk"
           },
-          "amount": "36 g"
+          "amount": "36 g",
+          "quantity": {
+            "value": 36,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "油",
             "en": "Oil"
           },
-          "amount": "22 g"
+          "amount": "22 g",
+          "quantity": {
+            "value": 22,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "低筋面粉",
             "en": "Cake flour"
           },
-          "amount": "36 g"
+          "amount": "36 g",
+          "quantity": {
+            "value": 36,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "玉米淀粉",
             "en": "Cornstarch"
           },
-          "amount": "6 g"
+          "amount": "6 g",
+          "quantity": {
+            "value": 6,
+            "unit": "g"
+          }
         },
         {
           "name": {
@@ -151,21 +199,33 @@
             "zh": "卡仕达酱",
             "en": "Custard"
           },
-          "amount": "100 g"
+          "amount": "100 g",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "糖粉",
             "en": "Powdered sugar"
           },
-          "amount": "15 g"
+          "amount": "15 g",
+          "quantity": {
+            "value": 15,
+            "unit": "g"
+          }
         },
         {
           "name": {
             "zh": "淡奶油",
             "en": "Heavy cream"
           },
-          "amount": "200 g"
+          "amount": "200 g",
+          "quantity": {
+            "value": 200,
+            "unit": "g"
+          }
         }
       ]
     },
@@ -196,7 +256,8 @@
           },
           "amount": "100 g"
         }
-      ]
+      ],
+      "scalable": false
     }
   ],
   "steps": [],
@@ -218,5 +279,20 @@
   "displayStatus": {
     "zh": "手写配方 · 用途待核",
     "en": "Handwritten · purpose unconfirmed"
+  },
+  "scale": {
+    "type": "batch",
+    "baseYield": {
+      "count": 1,
+      "unit": {
+        "zh": "份原方",
+        "en": "original batches"
+      }
+    },
+    "multipliers": [
+      0.5,
+      1,
+      2
+    ]
   }
 }
