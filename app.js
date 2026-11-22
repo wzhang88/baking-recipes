@@ -33,6 +33,7 @@ function localized(value, lang = language) {
 function scaleFactor(recipe) {
   const scale = recipe.data?.scale;
   if (!scale) return 1;
+  if (scale.type === 'flour') return (recipe.scaleChoice ?? scale.baseFlourGrams) / scale.baseFlourGrams;
   if (scale.type === 'round_pan') {
     const diameter = recipe.scaleChoice ?? scale.baseDiameterIn;
     return (diameter / scale.baseDiameterIn) ** 2 / scale.basePanCount;
@@ -42,15 +43,24 @@ function scaleFactor(recipe) {
 
 function formatQuantity(ingredient, factor, lang) {
   const original = localized(ingredient.amount, lang);
+  if (ingredient.quantity?.percentOfFlour != null) {
+    const grams = Math.round(ingredient.quantity.percentOfFlour * factor * 10) / 10;
+    return `${grams} g (${ingredient.quantity.percentOfFlour}% ${lang === 'en' ? 'of flour' : '面粉比'})`;
+  }
   if (factor === 1) return original;
-  if (!ingredient.quantity) return original + (lang === 'en' ? ' · original amount; adjust by taste' : ' · 原记录，未换算');
-  const { value, unit, approxGramPerEgg } = ingredient.quantity;
+  if (!ingredient.quantity) return original + (lang === 'en' ? ' · original note, not scaled' : ' · 原记录，未换算');
+  const { value, unit, approxGramPerEgg, kind, min, max, parts, partLabels, alternatives } = ingredient.quantity;
+  const display = number => String(Math.round(number * 10) / 10);
+  if (min != null && max != null) return `${display(min * factor)}–${display(max * factor)} ${unit}`;
+  if (parts) return parts.map((part, i) => `${localized(partLabels, lang)?.[i] || ''} ${display(part * factor)} ${unit}`.trim()).join(' + ');
+  if (alternatives) return alternatives.map(option => option.map(part => `${display(part * factor)} ${unit}`).join(' + ')).join(lang === 'en' ? ' or ' : ' 或 ');
   const scaled = value * factor;
-  const rounded = Math.round(scaled * 10) / 10;
+  const rounded = display(scaled);
   if (unit === 'egg') {
-    const eggs = lang === 'en' ? `${rounded} eggs` : `${rounded} 个`;
+    const eggName = lang === 'en' ? ({ whole: 'eggs', white: 'egg whites', yolk: 'egg yolks' }[kind] || 'eggs') : '个';
+    const eggs = `${rounded} ${eggName}`;
     const grams = Math.round(scaled * approxGramPerEgg);
-    return lang === 'en' ? `about ${eggs} (about ${grams} g beaten egg)` : `约 ${eggs}（打散后约 ${grams} g）`;
+    return lang === 'en' ? `about ${eggs} (about ${grams} g ${kind === 'white' ? 'whites' : kind === 'yolk' ? 'yolks' : 'beaten egg'})` : `约 ${eggs}（约 ${grams} g，打散称重）`;
   }
   return `${rounded} ${unit}`;
 }
@@ -59,31 +69,49 @@ function scaleControl(recipe, lang) {
   const scale = recipe.data.scale;
   if (!scale) return null;
   const control = node('div', null, 'scale-control');
-  const label = node('label', lang === 'en' ? 'Scale ingredients' : '换算材料');
-  const select = node('select');
-  select.setAttribute('aria-label', label.textContent);
-  const choices = scale.type === 'round_pan' ? scale.diametersIn : scale.multipliers;
-  const current = recipe.scaleChoice ?? (scale.type === 'round_pan' ? scale.baseDiameterIn : 1);
-  for (const choice of choices) {
-    let text;
-    if (scale.type === 'round_pan') text = lang === 'en' ? `One ${choice}-inch round pan` : `一个 ${choice} 寸圆模`;
-    else {
-      const count = scale.baseYield.count * choice;
-      text = lang === 'en' ? `${count} × 450 g loaf pan${count === 1 ? '' : 's'}` : `${count} 个 450 g 吐司模`;
+  const label = node('label', scale.type === 'flour' ? (lang === 'en' ? 'Flour (g)' : '面粉重量（g）') : (lang === 'en' ? 'Scale ingredients' : '换算材料'));
+  let picker;
+  if (scale.type === 'flour') {
+    picker = node('input');
+    picker.type = 'number';
+    picker.min = '1';
+    picker.step = '1';
+    picker.value = String(recipe.scaleChoice ?? scale.baseFlourGrams);
+    picker.setAttribute('aria-label', label.textContent);
+    picker.addEventListener('change', () => {
+      const next = Number(picker.value);
+      if (!Number.isFinite(next) || next < 1) { picker.value = String(recipe.scaleChoice ?? scale.baseFlourGrams); return; }
+      recipe.scaleChoice = next;
+      renderStructured(recipe, language);
+    });
+  } else {
+    picker = node('select');
+    picker.setAttribute('aria-label', label.textContent);
+    const choices = scale.type === 'round_pan' ? scale.diametersIn : scale.multipliers;
+    const current = recipe.scaleChoice ?? (scale.type === 'round_pan' ? scale.baseDiameterIn : 1);
+    for (const choice of choices) {
+      let text;
+      if (scale.type === 'round_pan') text = lang === 'en' ? `One ${choice}-inch round pan` : `一个 ${choice} 寸圆模`;
+      else {
+        const count = scale.baseYield.count * choice;
+        const unit = localized(scale.baseYield.unit, lang);
+        text = `${count} ${unit}`;
+      }
+      const option = node('option', text);
+      option.value = String(choice);
+      picker.append(option);
     }
-    const option = node('option', text);
-    option.value = String(choice);
-    select.append(option);
+    picker.value = String(current);
+    picker.addEventListener('change', () => {
+      recipe.scaleChoice = Number(picker.value);
+      renderStructured(recipe, language);
+    });
   }
-  select.value = String(current);
-  select.addEventListener('change', () => {
-    recipe.scaleChoice = Number(select.value);
-    renderStructured(recipe, language);
-  });
+  const base = scale.type === 'round_pan' ? `${scale.baseDiameterIn}${lang === 'en' ? '-inch pan' : ' 寸模具'}` : scale.type === 'flour' ? `${scale.baseFlourGrams} g ${lang === 'en' ? 'flour' : '面粉'}` : `${scale.baseYield.count} ${localized(scale.baseYield.unit, lang)}`;
   const warning = node('p', lang === 'en'
-    ? `Scaled from ${scale.type === 'round_pan' ? `${scale.baseDiameterIn}-inch` : `${scale.baseYield.count} loaves`}. Ingredients only; the method, oven temperature and baking time describe the original batch. ${scale.type === 'round_pan' ? 'One egg is estimated as 50 g without the shell.' : 'Judge proofing and doneness in your oven.'}`
-    : `基于${scale.type === 'round_pan' ? `${scale.baseDiameterIn} 寸` : `${scale.baseYield.count} 条`}原方换算材料；步骤、烤温和时间仍为原记录。${scale.type === 'round_pan' ? '鸡蛋按去壳每个约 50 g 估算。' : '发酵与出炉状态按实际观察。'}`, 'scale-warning');
-  control.append(label, select, warning);
+    ? `Scaled from ${base}. Only confirmed amounts change; original notes, uncertain amounts, oven settings and timing remain as recorded. For fractional eggs, separate and weigh the needed portion. Pan depth and filling may need adjustment.`
+    : `基于${base}换算已确认用量；原方笔记、待核材料、烤温与时间不变。非整数个鸡蛋请分开打散称重；模具深度和馅量按实际调整。`, 'scale-warning');
+  control.append(label, picker, warning);
   return control;
 }
 
@@ -103,12 +131,12 @@ function renderStructured(recipe, lang) {
   const factor = scaleFactor(recipe);
   for (const section of data.sections) {
     const sectionTitle = localized(section.title, lang);
-    if (sectionTitle !== (lang === 'en' ? 'Ingredients' : '材料')) ingredients.append(node('h4', sectionTitle));
+    if (sectionTitle !== (lang === 'en' ? 'Ingredients' : '材料')) ingredients.append(node('h4', sectionTitle + (section.scalable === false && factor !== 1 ? (lang === 'en' ? ' · reference only' : ' · 仅供参考') : '')));
     const list = node('dl');
     for (const ingredient of section.ingredients) {
       const row = node('div');
       row.append(node('dt', localized(ingredient.name, lang)),
-        node('dd', [formatQuantity(ingredient, factor, lang), localized(ingredient.detail, lang)].filter(Boolean).join(' · ')));
+        node('dd', [formatQuantity(ingredient, section.scalable === false ? 1 : factor, lang), localized(ingredient.detail, lang)].filter(Boolean).join(' · ')));
       list.append(row);
     }
     ingredients.append(list);
