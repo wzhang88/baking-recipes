@@ -10,6 +10,13 @@ const loadMessage = document.querySelector('#load-message');
 
 const categoryNamesZh = { bread: '面包', cake: '蛋糕', snack: '点心' };
 const categoryNames = { bread: 'Bread', cake: 'Cakes', snack: 'Treats' };
+const recipeIcons = {
+  'xiaolongbao-notes': 'baozi',
+  'coconut-jelly': 'coconut-jelly',
+  'double-skin-milk': 'double-skin-milk',
+  'cream-egg-tarts': 'egg-tart',
+  'chestnut-pumpkin-pie': 'pie'
+};
 const filterNames = {
   zh: { all: '全部', bread: '面包', cake: '蛋糕', snack: '点心', planned: '待试做' },
   en: { all: 'All', bread: 'Bread', cake: 'Cakes', snack: 'Treats', planned: 'To try' }
@@ -127,7 +134,7 @@ function scaleControl(recipe, lang) {
 function renderStructured(recipe, lang) {
   const { element, summary, body, data } = recipe;
   const labels = node('div', null, 'labels');
-  const iconName = data.id === 'xiaolongbao-notes' ? 'baozi' : data.category === 'bread' ? 'bread' : data.category === 'cake' ? 'cake' : 'cookie';
+  const iconName = recipeIcons[data.id] || (data.category === 'bread' ? 'bread' : data.category === 'cake' ? 'cake' : 'cookie');
   const icon = node('img', null, 'recipe-icon');
   icon.src = `assets/${iconName}-icon.png`;
   icon.alt = '';
