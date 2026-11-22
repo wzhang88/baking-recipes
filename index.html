@@ -4,93 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="我的烘焙配方，收录吐司、巴斯克、面包和蛋白棒的用量与烤箱记录。">
-<meta name="theme-color" content="#482332">
+<meta name="theme-color" content="#1d3838">
 <title>我的烘焙配方</title>
-<style>
-:root {
-  color-scheme: light;
-  --paper: #fff9ec;
-  --card: #fffefa;
-  --ink: #302022;
-  --muted: #6c5356;
-  --plum: #482332;
-  --line: #e3d0bf;
-  --accent: #be563a;
-  --display: "Songti SC", "Noto Serif CJK SC", SimSun, Georgia, serif;
-  --body: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 var(--body); }
-.wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
-.hero { background: var(--plum); color: #fff5e7; overflow: hidden; border-bottom: .45rem solid #e2a56d; }
-.hero .wrap { padding-block: clamp(2.6rem, 7vw, 5.5rem); }
-.hero-top { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
-.language-switch { flex: none; border-color: #f1cfbd; color: #fff5e7; background: #ffffff18; }
-.language-switch:hover { background: #ffffff30; }
-.language-switch:disabled { opacity: .65; cursor: wait; }
-.language-message { min-height: 1.4em; margin-top: .5rem !important; font-size: .88rem; }
-.language-message:empty { display: none; }
-h1, h2 { font-family: var(--display); }
-h1 { font-size: clamp(2.35rem, 7vw, 4.8rem); line-height: 1.15; letter-spacing: .025em; margin: 0 0 .7rem; }
-.hero p { margin: 0; color: #f1cfbd; }
-main { padding-block: 1.6rem 4rem; }
-.toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: .8rem 1.25rem; }
-.search { flex: 1 1 18rem; }
-.search label { display: block; font-weight: 650; margin-bottom: .25rem; }
-input, button { font: inherit; }
-input { width: 100%; min-height: 2.8rem; border: 1px solid #a98e84; border-radius: .45rem; background: var(--card); color: var(--ink); padding: .4rem .75rem; }
-select { font: inherit; min-height: 2.6rem; max-width: 100%; border: 1px solid #a98e84; border-radius: .45rem; background: var(--card); color: var(--ink); padding: .35rem .7rem; }
-.filters { display: flex; flex-wrap: wrap; gap: .42rem; }
-button { min-height: 2.8rem; border: 1px solid #a98e84; border-radius: 2rem; padding: .35rem .8rem; background: transparent; color: var(--ink); cursor: pointer; }
-button[aria-pressed="true"] { background: var(--plum); border-color: var(--plum); color: white; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.count { color: var(--muted); margin: 1rem 0 .65rem; }
-.recipe { border: 1px solid var(--line); background: var(--card); border-radius: .65rem; margin: 0 0 .7rem; }
-.recipe[open] { border-color: #ae8b7b; }
-summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .3rem 1rem; align-items: center; cursor: pointer; padding: 1rem clamp(.85rem, 3vw, 1.6rem); list-style: none; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: ""; grid-column: 2; grid-row: 1 / span 3; width: .55rem; height: .55rem; transform: rotate(45deg); border-bottom: 2px solid var(--plum); border-right: 2px solid var(--plum); margin: 0 .2rem .25rem; }
-details[open] summary::after { transform: rotate(225deg); margin: .25rem .2rem 0; }
-.labels { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; font-size: .88rem; color: var(--muted); }
-.status { background: #f4e6d4; color: #623f25; border-radius: 1rem; padding: .03rem .55rem; }
-.status.planned { background: #f1e7ee; color: var(--plum); }
-h2 { grid-column: 1; font-size: clamp(1.35rem, 3vw, 1.85rem); line-height: 1.25; margin: 0; }
-.metadata { grid-column: 1; color: var(--muted); margin: .05rem 0 0; font-size: .94rem; }
-.recipe-body { border-top: 1px solid var(--line); padding: 1.25rem clamp(.85rem, 3vw, 1.6rem) 1.5rem; }
-.scale-control { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: .85rem 1rem; margin: 0 0 1.2rem; border: 1px solid var(--line); border-radius: .6rem; background: #fcf2e5; }
-.scale-control label { font-weight: 700; }
-.scale-control input[type="number"] { width: 8rem; }
-.scale-warning { flex-basis: 100%; margin: 0; color: var(--muted); font-size: .86rem; }
-.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2.3rem; }
-h3 { margin: 0 0 .5rem; font-size: 1.08rem; }
-h4 { margin: .85rem 0 .25rem; font-size: .95rem; color: var(--plum); }
-dl { margin: 0; }
-dl div { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: .35rem .7rem; border-bottom: 1px solid #f0e5da; padding: .24rem 0; }
-dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
-ol, ul { margin: 0; padding-inline-start: 1.35rem; }
-li + li { margin-top: .4rem; }
-.note { margin: 1.05rem 0 0; padding: .7rem .85rem; border-inline-start: 3px solid #bf7956; background: #fff3e4; }
-.empty { padding: 1.2rem; border: 1px dashed #a98e84; border-radius: .65rem; }
-[hidden] { display: none !important; }
-@media (max-width: 42rem) { .columns { grid-template-columns: 1fr; } }
-@media (max-width: 25rem) { .hero-top { align-items: start; } .language-switch { padding-inline: .55rem; } }
-@media print {
-  .toolbar, .count, .empty, .language-switch, .language-message { display: none !important; }
-  .hero { background: white; color: black; border: none; }
-  .hero .wrap { padding: 0; }
-  .hero p { color: black; }
-  summary::after { display: none; }
-  .recipe { break-inside: avoid; }
-}
-</style>
+<link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
 <header class="hero">
   <div class="wrap">
     <div class="hero-top">
-      <div><h1>我的烘焙配方</h1><p id="hero-description">吐司、巴斯克和下次想烤的点心</p></div>
+      <span class="brand">Baking journal</span>
       <button type="button" class="language-switch" id="language-switch" lang="en" aria-label="Switch to English">English</button>
     </div>
+    <div class="hero-copy"><h1>我的烘焙配方</h1><p id="hero-description">吐司、巴斯克和下次想烤的点心</p></div>
     <p class="language-message" id="language-message" role="status" aria-live="polite"></p>
   </div>
 </header>
