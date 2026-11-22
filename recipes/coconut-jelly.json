@@ -25,6 +25,10 @@
           "amount": {
             "zh": "1 罐",
             "en": "1 can"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "can"
           }
         },
         {
@@ -103,6 +107,10 @@
           "amount": {
             "zh": "1 罐",
             "en": "1 can"
+          },
+          "quantity": {
+            "value": 1,
+            "unit": "can"
           }
         },
         {
