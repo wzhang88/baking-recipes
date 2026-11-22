@@ -100,8 +100,10 @@ function scaleControl(recipe, lang) {
       if (scale.type === 'round_pan') text = lang === 'en' ? `One ${choice}-inch round pan` : `一个 ${choice} 寸圆模`;
       else {
         const count = scale.baseYield.count * choice;
-        const unit = localized(scale.baseYield.unit, lang);
+        let unit = localized(scale.baseYield.unit, lang);
+        if (lang === 'en' && count <= 1 && unit === 'original batches') unit = 'original batch';
         text = `${count} ${unit}`;
+        if (scale.shellsPerItem) text += lang === 'en' ? ` (about ${count * scale.shellsPerItem} shells)` : `（约 ${count * scale.shellsPerItem} 片外壳）`;
       }
       const option = node('option', text);
       option.value = String(choice);
@@ -113,7 +115,8 @@ function scaleControl(recipe, lang) {
       renderStructured(recipe, language);
     });
   }
-  const base = scale.type === 'round_pan' ? `${scale.baseDiameterIn}${lang === 'en' ? '-inch pan' : ' 寸模具'}` : scale.type === 'flour' ? `${scale.baseFlourGrams} g ${lang === 'en' ? 'flour' : '面粉'}` : `${scale.baseYield.count} ${localized(scale.baseYield.unit, lang)}`;
+  let base = scale.type === 'round_pan' ? `${scale.baseDiameterIn}${lang === 'en' ? '-inch pan' : ' 寸模具'}` : scale.type === 'flour' ? `${scale.baseFlourGrams} g ${lang === 'en' ? 'flour' : '面粉'}` : `${scale.baseYield.count} ${localized(scale.baseYield.unit, lang)}`;
+  if (lang === 'en') base = base.replace('1 original batches', '1 original batch');
   const warning = node('p', lang === 'en'
     ? `Scaled from ${base}. Only confirmed amounts change; original notes, uncertain amounts, oven settings and timing remain as recorded. For fractional eggs, separate and weigh the needed portion. Pan depth and filling may need adjustment.`
     : `基于${base}换算已确认用量；原方笔记、待核材料、烤温与时间不变。非整数个鸡蛋请分开打散称重；模具深度和馅量按实际调整。`, 'scale-warning');
@@ -163,7 +166,7 @@ function renderStructured(recipe, lang) {
 }
 
 async function loadRecipeData() {
-  const manifestResponse = await fetch('recipes/index.json?v=4');
+  const manifestResponse = await fetch('recipes/index.json?v=5');
   if (!manifestResponse.ok) throw new Error('Could not load recipe index');
   const manifest = await manifestResponse.json();
   if (manifest.version !== 1 || !Array.isArray(manifest.ids) || new Set(manifest.ids).size !== manifest.ids.length) {
@@ -171,7 +174,7 @@ async function loadRecipeData() {
   }
   const data = await Promise.all(manifest.ids.map(async id => {
     if (!/^[a-z0-9-]+$/.test(id)) throw new Error(`Invalid recipe ID: ${id}`);
-    const response = await fetch(`recipes/${id}.json?v=4`);
+    const response = await fetch(`recipes/${id}.json?v=5`);
     if (!response.ok) throw new Error(`Could not load ${id}`);
     const recipe = await response.json();
     if (recipe.id !== id || !recipe.displayStatus?.zh || !recipe.displayStatus?.en) {
