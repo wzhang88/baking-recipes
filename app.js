@@ -5,41 +5,19 @@ const empty = document.querySelector('.empty');
 const languageSwitch = document.querySelector('#language-switch');
 const languageMessage = document.querySelector('#language-message');
 const heroDescription = document.querySelector('#hero-description');
+const recipeContainer = document.querySelector('#recipes');
+const loadMessage = document.querySelector('#load-message');
 
+const categoryNamesZh = { bread: '面包', cake: '蛋糕', snack: '点心' };
 const categoryNames = { bread: 'Bread', cake: 'Cakes', snack: 'Treats' };
-const statusNames = {
-  '已试做': 'Baked', '待试做': 'To try', '旧配方': 'Older recipe',
-  '备忘录配方': 'Recipe notes', '备忘录配方 · 待核': 'Notes · to verify',
-  '备忘录配方 · 烤温待核': 'Notes · oven temperature unconfirmed',
-  '备忘录 · 步骤待补': 'Notes · method incomplete',
-  '备忘录 · 部分待核': 'Notes · some details unconfirmed',
-  '手写配方': 'Handwritten recipe',
-  '手写配方 · 用途待核': 'Handwritten · purpose unconfirmed',
-  '手写配方 · 部分待辨': 'Handwritten · some details unclear',
-  '手写配方已核对': 'Handwritten recipe reviewed',
-  '配方已整理': 'Recipe organized', '黑芝麻已试做': 'Black sesame version baked'
-};
 const filterNames = {
   zh: { all: '全部', bread: '面包', cake: '蛋糕', snack: '点心', planned: '待试做' },
   en: { all: 'All', bread: 'Bread', cake: 'Cakes', snack: 'Treats', planned: 'To try' }
 };
 
-const recipes = [...document.querySelectorAll('.recipe')].map(element => {
-  const summary = element.querySelector('summary');
-  const body = element.querySelector('.recipe-body');
-  return {
-    element, summary, body,
-    originalSummary: [...summary.childNodes].map(node => node.cloneNode(true)),
-    originalBody: [...body.childNodes].map(node => node.cloneNode(true)),
-    originalStatus: summary.querySelector('.status').textContent.trim(),
-    originalText: element.textContent.toLocaleLowerCase().replace(/\s+/g, ''),
-    translatedText: '', data: null, scaleChoice: null
-  };
-});
-
+const recipes = [];
 let active = 'all';
 let language = 'zh';
-let recipeDataPromise;
 
 function node(tag, text, className) {
   const element = document.createElement(tag);
@@ -110,17 +88,13 @@ function scaleControl(recipe, lang) {
 }
 
 function renderStructured(recipe, lang) {
-  const { element, summary, body, originalStatus, data } = recipe;
-  if (lang === 'en') {
-    const labels = node('div', null, 'labels');
-    labels.append(node('span', categoryNames[element.dataset.category] || element.dataset.category));
-    const status = node('span', statusNames[originalStatus] || 'Recipe notes', 'status');
-    if (element.dataset.status === 'planned') status.classList.add('planned');
-    labels.append(status);
-    summary.replaceChildren(labels, node('h2', data.title.en), node('p', data.summary.en, 'metadata'));
-  } else {
-    summary.replaceChildren(...recipe.originalSummary.map(child => child.cloneNode(true)));
-  }
+  const { element, summary, body, data } = recipe;
+  const labels = node('div', null, 'labels');
+  labels.append(node('span', (lang === 'en' ? categoryNames : categoryNamesZh)[data.category] || data.category));
+  const status = node('span', localized(data.displayStatus, lang), 'status');
+  if (data.status === 'planned') status.classList.add('planned');
+  labels.append(status);
+  summary.replaceChildren(labels, node('h2', localized(data.title, lang)), node('p', localized(data.summary, lang), 'metadata'));
 
   const columns = node('div', null, 'columns');
   const ingredients = node('div');
@@ -154,49 +128,48 @@ function renderStructured(recipe, lang) {
   body.replaceChildren(...(control ? [control, columns] : [columns]));
 }
 
-function renderEnglish(recipe) {
-  renderStructured(recipe, 'en');
-}
-
-function renderChinese(recipe) {
-  if (recipe.data?.scale) return renderStructured(recipe, 'zh');
-  recipe.summary.replaceChildren(...recipe.originalSummary.map(child => child.cloneNode(true)));
-  recipe.body.replaceChildren(...recipe.originalBody.map(child => child.cloneNode(true)));
-}
-
 async function loadRecipeData() {
-  if (!recipeDataPromise) {
-    recipeDataPromise = Promise.all(recipes.map(async recipe => {
-      const response = await fetch(`recipes/${encodeURIComponent(recipe.element.id)}.json`);
-      if (!response.ok) throw new Error(`Could not load ${recipe.element.id}`);
-      const data = await response.json();
-      if (data.id !== recipe.element.id) throw new Error(`Unexpected recipe ID: ${data.id}`);
-      return data;
-    })).then(all => {
-      all.forEach((data, index) => {
-        recipes[index].data = data;
-        recipes[index].translatedText = JSON.stringify(data).toLocaleLowerCase().replace(/\s+/g, '');
-      });
-      if (language === 'zh') for (const recipe of recipes) {
-        if (recipe.data.scale) renderChinese(recipe);
-      }
-    }).catch(error => {
-      recipeDataPromise = undefined;
-      throw error;
-    });
+  const manifestResponse = await fetch('recipes/index.json?v=3');
+  if (!manifestResponse.ok) throw new Error('Could not load recipe index');
+  const manifest = await manifestResponse.json();
+  if (manifest.version !== 1 || !Array.isArray(manifest.ids) || new Set(manifest.ids).size !== manifest.ids.length) {
+    throw new Error('Invalid recipe index');
   }
-  return recipeDataPromise;
+  const data = await Promise.all(manifest.ids.map(async id => {
+    if (!/^[a-z0-9-]+$/.test(id)) throw new Error(`Invalid recipe ID: ${id}`);
+    const response = await fetch(`recipes/${id}.json?v=3`);
+    if (!response.ok) throw new Error(`Could not load ${id}`);
+    const recipe = await response.json();
+    if (recipe.id !== id || !recipe.displayStatus?.zh || !recipe.displayStatus?.en) {
+      throw new Error(`Invalid recipe data: ${id}`);
+    }
+    return recipe;
+  }));
+  for (const entry of data) {
+    const element = document.createElement('details');
+    element.className = 'recipe';
+    element.id = entry.id;
+    element.dataset.category = entry.category;
+    element.dataset.status = entry.status;
+    const summary = document.createElement('summary');
+    const body = node('div', null, 'recipe-body');
+    element.append(summary, body);
+    recipeContainer.append(element);
+    const recipe = { element, summary, body, data: entry, scaleChoice: null,
+      searchText: JSON.stringify(entry).toLocaleLowerCase().replace(/\s+/g, '') };
+    recipes.push(recipe);
+    renderStructured(recipe, language);
+  }
 }
 
 function updateRecipes() {
   const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   let visible = 0;
   for (const recipe of recipes) {
-    const { element, originalText, translatedText } = recipe;
+    const { element, searchText } = recipe;
     const { category, status } = element.dataset;
     const matchesFilter = active === 'all' || active === category || active === status;
-    const text = originalText + translatedText;
-    element.hidden = !(matchesFilter && terms.every(term => text.includes(term)));
+    element.hidden = !(matchesFilter && terms.every(term => searchText.includes(term)));
     if (!element.hidden) visible += 1;
   }
   count.textContent = language === 'en' ? `${visible} recipes` : `${visible} 份配方`;
@@ -215,16 +188,9 @@ function openLinkedRecipe() {
   }
 }
 
-async function setLanguage(next) {
+function setLanguage(next) {
   if (next === language) return;
-  languageSwitch.disabled = true;
-  languageMessage.textContent = next === 'en' ? 'Loading translations…' : '';
-  try {
-    if (next === 'en') await loadRecipeData();
-    for (const recipe of recipes) {
-      if (next === 'en') renderEnglish(recipe);
-      else renderChinese(recipe);
-    }
+  for (const recipe of recipes) renderStructured(recipe, next);
     language = next;
     document.documentElement.lang = next === 'en' ? 'en' : 'zh-Hans';
     document.title = next === 'en' ? 'My Baking Recipes' : '我的烘焙配方';
@@ -239,15 +205,8 @@ async function setLanguage(next) {
     languageSwitch.lang = next === 'en' ? 'zh' : 'en';
     languageSwitch.setAttribute('aria-label', next === 'en' ? '切换到中文' : 'Switch to English');
     try { localStorage.setItem('baking-recipes-language', next); } catch (_) { /* Storage may be unavailable. */ }
-    languageMessage.textContent = '';
     updateRecipes();
     openLinkedRecipe();
-  } catch (error) {
-    languageMessage.textContent = 'Translations could not load. Please try again. / 英文内容加载失败，请重试。';
-    console.error(error);
-  } finally {
-    languageSwitch.disabled = false;
-  }
 }
 
 for (const filter of filters) {
@@ -260,10 +219,18 @@ for (const filter of filters) {
 search.addEventListener('input', updateRecipes);
 languageSwitch.addEventListener('click', () => setLanguage(language === 'zh' ? 'en' : 'zh'));
 window.addEventListener('hashchange', openLinkedRecipe);
-document.querySelector('.toolbar').hidden = false;
-updateRecipes();
-openLinkedRecipe();
-try {
-  if (localStorage.getItem('baking-recipes-language') === 'en') setLanguage('en');
-} catch (_) { /* Chinese remains the default. */ }
-loadRecipeData().then(updateRecipes).catch(() => { /* Chinese search still works offline. */ });
+languageSwitch.disabled = true;
+loadRecipeData().then(() => {
+  loadMessage.hidden = true;
+  document.querySelector('.toolbar').hidden = false;
+  languageSwitch.disabled = false;
+  updateRecipes();
+  openLinkedRecipe();
+  try {
+    if (localStorage.getItem('baking-recipes-language') === 'en') setLanguage('en');
+  } catch (_) { /* Chinese remains the default. */ }
+}).catch(error => {
+  loadMessage.textContent = '配方加载失败，请刷新页面重试。 / Could not load recipes. Please refresh.';
+  languageMessage.textContent = '配方文件暂时不可用。 / Recipe files are unavailable.';
+  console.error(error);
+});
