@@ -127,6 +127,14 @@ function scaleControl(recipe, lang) {
 function renderStructured(recipe, lang) {
   const { element, summary, body, data } = recipe;
   const labels = node('div', null, 'labels');
+  const iconName = data.id === 'xiaolongbao-notes' ? 'baozi' : data.category === 'bread' ? 'bread' : data.category === 'cake' ? 'cake' : 'cookie';
+  const icon = node('img', null, 'recipe-icon');
+  icon.src = `assets/${iconName}-icon.png`;
+  icon.alt = '';
+  icon.width = 56;
+  icon.height = 40;
+  icon.loading = 'lazy';
+  labels.append(icon);
   labels.append(node('span', (lang === 'en' ? categoryNames : categoryNamesZh)[data.category] || data.category));
   const status = node('span', localized(data.displayStatus, lang), 'status');
   if (data.status === 'planned') status.classList.add('planned');
