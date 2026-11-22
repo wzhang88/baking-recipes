@@ -71,6 +71,7 @@ function scaleControl(recipe, lang) {
   const control = node('div', null, 'scale-control');
   const label = node('label', scale.type === 'flour' ? (lang === 'en' ? 'Flour (g)' : '面粉重量（g）') : (lang === 'en' ? 'Scale ingredients' : '换算材料'));
   let picker;
+  let applyButton;
   if (scale.type === 'flour') {
     picker = node('input');
     picker.type = 'number';
@@ -78,12 +79,16 @@ function scaleControl(recipe, lang) {
     picker.step = '1';
     picker.value = String(recipe.scaleChoice ?? scale.baseFlourGrams);
     picker.setAttribute('aria-label', label.textContent);
-    picker.addEventListener('change', () => {
+    const apply = () => {
       const next = Number(picker.value);
       if (!Number.isFinite(next) || next < 1) { picker.value = String(recipe.scaleChoice ?? scale.baseFlourGrams); return; }
       recipe.scaleChoice = next;
       renderStructured(recipe, language);
-    });
+    };
+    picker.addEventListener('keydown', event => { if (event.key === 'Enter') apply(); });
+    applyButton = node('button', lang === 'en' ? 'Calculate' : '计算');
+    applyButton.type = 'button';
+    applyButton.addEventListener('click', apply);
   } else {
     picker = node('select');
     picker.setAttribute('aria-label', label.textContent);
@@ -111,7 +116,7 @@ function scaleControl(recipe, lang) {
   const warning = node('p', lang === 'en'
     ? `Scaled from ${base}. Only confirmed amounts change; original notes, uncertain amounts, oven settings and timing remain as recorded. For fractional eggs, separate and weigh the needed portion. Pan depth and filling may need adjustment.`
     : `基于${base}换算已确认用量；原方笔记、待核材料、烤温与时间不变。非整数个鸡蛋请分开打散称重；模具深度和馅量按实际调整。`, 'scale-warning');
-  control.append(label, picker, warning);
+  control.append(label, picker, ...(applyButton ? [applyButton] : []), warning);
   return control;
 }
 
