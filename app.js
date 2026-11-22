@@ -56,6 +56,7 @@ function formatQuantity(ingredient, factor, lang) {
   if (alternatives) return alternatives.map(option => option.map(part => `${display(part * factor)} ${unit}`).join(' + ')).join(lang === 'en' ? ' or ' : ' 或 ');
   const scaled = value * factor;
   const rounded = display(scaled);
+  if (unit === 'can') return lang === 'en' ? `${rounded} can${scaled === 1 ? '' : 's'} (same can size)` : `${rounded} 罐（同规格）`;
   if (unit === 'egg') {
     const eggName = lang === 'en' ? ({ whole: 'eggs', white: 'egg whites', yolk: 'egg yolks' }[kind] || 'eggs') : '个';
     const eggs = `${rounded} ${eggName}`;
