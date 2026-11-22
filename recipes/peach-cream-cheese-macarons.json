@@ -170,10 +170,11 @@
     "baseYield": {
       "count": 20,
       "unit": {
-        "zh": "个夹馅马卡龙（约 40 片外壳）",
-        "en": "filled macarons (about 40 shells)"
+        "zh": "个夹馅马卡龙",
+        "en": "filled macarons"
       }
     },
+    "shellsPerItem": 2,
     "multipliers": [
       0.5,
       1,
