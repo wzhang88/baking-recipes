@@ -167,5 +167,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "cream-daifuku"
+  "legacyAnchor": "cream-daifuku",
+  "displayStatus": {
+    "zh": "已试做",
+    "en": "Baked"
+  }
 }

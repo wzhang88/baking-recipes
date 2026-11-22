@@ -118,5 +118,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "cranberry-cream-scones"
+  "legacyAnchor": "cranberry-cream-scones",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }

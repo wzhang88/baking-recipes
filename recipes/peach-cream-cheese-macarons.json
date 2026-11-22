@@ -128,5 +128,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "peach-cream-cheese-macarons"
+  "legacyAnchor": "peach-cream-cheese-macarons",
+  "displayStatus": {
+    "zh": "已试做",
+    "en": "Baked"
+  }
 }

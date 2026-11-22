@@ -141,5 +141,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "eight-inch-strawberry-chiffon"
+  "legacyAnchor": "eight-inch-strawberry-chiffon",
+  "displayStatus": {
+    "zh": "手写配方已核对",
+    "en": "Handwritten recipe reviewed"
+  }
 }

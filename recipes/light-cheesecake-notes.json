@@ -136,5 +136,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "light-cheesecake-notes"
+  "legacyAnchor": "light-cheesecake-notes",
+  "displayStatus": {
+    "zh": "手写配方 · 部分待辨",
+    "en": "Handwritten · some details unclear"
+  }
 }

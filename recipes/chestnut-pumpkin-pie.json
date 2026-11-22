@@ -93,5 +93,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "chestnut-pumpkin-pie"
+  "legacyAnchor": "chestnut-pumpkin-pie",
+  "displayStatus": {
+    "zh": "已试做",
+    "en": "Baked"
+  }
 }

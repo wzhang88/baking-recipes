@@ -136,5 +136,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "matcha-mille-crepe-notes"
+  "legacyAnchor": "matcha-mille-crepe-notes",
+  "displayStatus": {
+    "zh": "备忘录 · 步骤待补",
+    "en": "Notes · method incomplete"
+  }
 }

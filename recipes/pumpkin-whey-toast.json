@@ -118,5 +118,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "pumpkin-whey-toast"
+  "legacyAnchor": "pumpkin-whey-toast",
+  "displayStatus": {
+    "zh": "已试做",
+    "en": "Baked"
+  }
 }

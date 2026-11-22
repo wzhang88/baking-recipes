@@ -181,5 +181,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "matcha-cream-cheese-cookies"
+  "legacyAnchor": "matcha-cream-cheese-cookies",
+  "displayStatus": {
+    "zh": "手写配方已核对",
+    "en": "Handwritten recipe reviewed"
+  }
 }

@@ -325,5 +325,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "chocolate-cheesecake-three-layer"
+  "legacyAnchor": "chocolate-cheesecake-three-layer",
+  "displayStatus": {
+    "zh": "配方已整理",
+    "en": "Recipe organized"
+  }
 }

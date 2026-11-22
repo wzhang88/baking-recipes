@@ -103,5 +103,9 @@
   "notes": [],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "sea-salt-rolls"
+  "legacyAnchor": "sea-salt-rolls",
+  "displayStatus": {
+    "zh": "待试做",
+    "en": "To try"
+  }
 }

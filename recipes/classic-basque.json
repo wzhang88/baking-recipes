@@ -88,5 +88,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "classic-basque"
+  "legacyAnchor": "classic-basque",
+  "displayStatus": {
+    "zh": "旧配方",
+    "en": "Older recipe"
+  }
 }

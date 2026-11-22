@@ -134,5 +134,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "black-sesame-tiramisu"
+  "legacyAnchor": "black-sesame-tiramisu",
+  "displayStatus": {
+    "zh": "黑芝麻已试做",
+    "en": "Black sesame version baked"
+  }
 }

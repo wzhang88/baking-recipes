@@ -161,5 +161,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "xiaolongbao-notes"
+  "legacyAnchor": "xiaolongbao-notes",
+  "displayStatus": {
+    "zh": "备忘录 · 部分待核",
+    "en": "Notes · some details unconfirmed"
+  }
 }

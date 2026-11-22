@@ -101,5 +101,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "matcha-protein-bars"
+  "legacyAnchor": "matcha-protein-bars",
+  "displayStatus": {
+    "zh": "待试做",
+    "en": "To try"
+  }
 }

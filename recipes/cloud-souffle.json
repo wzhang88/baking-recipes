@@ -90,5 +90,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "cloud-souffle"
+  "legacyAnchor": "cloud-souffle",
+  "displayStatus": {
+    "zh": "备忘录配方 · 烤温待核",
+    "en": "Notes · oven temperature unconfirmed"
+  }
 }

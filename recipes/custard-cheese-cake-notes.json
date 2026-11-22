@@ -214,5 +214,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "custard-cheese-cake-notes"
+  "legacyAnchor": "custard-cheese-cake-notes",
+  "displayStatus": {
+    "zh": "手写配方 · 用途待核",
+    "en": "Handwritten · purpose unconfirmed"
+  }
 }

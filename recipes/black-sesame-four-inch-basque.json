@@ -102,5 +102,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "black-sesame-four-inch-basque"
+  "legacyAnchor": "black-sesame-four-inch-basque",
+  "displayStatus": {
+    "zh": "备忘录配方",
+    "en": "Recipe notes"
+  }
 }

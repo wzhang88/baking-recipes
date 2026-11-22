@@ -66,5 +66,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "double-skin-milk"
+  "legacyAnchor": "double-skin-milk",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }

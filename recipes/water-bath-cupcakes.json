@@ -100,5 +100,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "water-bath-cupcakes"
+  "legacyAnchor": "water-bath-cupcakes",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }

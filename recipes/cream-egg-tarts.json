@@ -106,5 +106,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "cream-egg-tarts"
+  "legacyAnchor": "cream-egg-tarts",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }

@@ -136,5 +136,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "jujube-sheet-cake"
+  "legacyAnchor": "jujube-sheet-cake",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }

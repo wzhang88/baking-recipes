@@ -138,5 +138,9 @@
       6,
       8
     ]
+  },
+  "displayStatus": {
+    "zh": "已试做",
+    "en": "Baked"
   }
 }

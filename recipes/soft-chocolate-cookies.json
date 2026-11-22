@@ -133,5 +133,9 @@
   ],
   "photos": [],
   "trials": [],
-  "legacyAnchor": "soft-chocolate-cookies"
+  "legacyAnchor": "soft-chocolate-cookies",
+  "displayStatus": {
+    "zh": "手写配方",
+    "en": "Handwritten recipe"
+  }
 }
