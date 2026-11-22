@@ -163,7 +163,7 @@ function renderStructured(recipe, lang) {
 }
 
 async function loadRecipeData() {
-  const manifestResponse = await fetch('recipes/index.json?v=3');
+  const manifestResponse = await fetch('recipes/index.json?v=4');
   if (!manifestResponse.ok) throw new Error('Could not load recipe index');
   const manifest = await manifestResponse.json();
   if (manifest.version !== 1 || !Array.isArray(manifest.ids) || new Set(manifest.ids).size !== manifest.ids.length) {
@@ -171,7 +171,7 @@ async function loadRecipeData() {
   }
   const data = await Promise.all(manifest.ids.map(async id => {
     if (!/^[a-z0-9-]+$/.test(id)) throw new Error(`Invalid recipe ID: ${id}`);
-    const response = await fetch(`recipes/${id}.json?v=3`);
+    const response = await fetch(`recipes/${id}.json?v=4`);
     if (!response.ok) throw new Error(`Could not load ${id}`);
     const recipe = await response.json();
     if (recipe.id !== id || !recipe.displayStatus?.zh || !recipe.displayStatus?.en) {
