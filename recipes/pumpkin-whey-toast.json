@@ -162,7 +162,13 @@
       "en": "Older notes mention “cut into 10 slices” and “two loaves, 8 slices each.” Pan division, slicing, proofing, and oven settings need confirmation."
     }
   ],
-  "photos": [],
+  "photos": [
+    {
+      "src": "assets/pumpkin-whey-toast-loaves.jpeg",
+      "alt": {"zh": "烤好的两条金黄色南瓜吐司，放在晾架上", "en": "Two golden pumpkin loaves cooling on a wire rack"},
+      "caption": {"zh": "成品 · 两条南瓜吐司", "en": "Finished bake · two pumpkin loaves"}
+    }
+  ],
   "trials": [],
   "legacyAnchor": "pumpkin-whey-toast",
   "displayStatus": {

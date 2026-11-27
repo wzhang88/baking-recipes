@@ -283,7 +283,18 @@
       "certainty": "unconfirmed"
     }
   ],
-  "photos": [],
+  "photos": [
+    {
+      "src": "assets/black-sesame-toast-loaf.jpeg",
+      "alt": {"zh": "黑芝麻山形吐司的整条外观", "en": "Whole black sesame loaf with a marbled top"},
+      "caption": {"zh": "成品 · 整条", "en": "Finished loaf"}
+    },
+    {
+      "src": "assets/black-sesame-toast-slices.jpeg",
+      "alt": {"zh": "切开的黑芝麻吐司，展示芝麻旋纹与切面", "en": "Sliced black sesame toast showing the sesame swirl"},
+      "caption": {"zh": "切面 · 黑芝麻旋纹", "en": "Sliced crumb · sesame swirl"}
+    }
+  ],
   "trials": [],
   "legacyAnchor": "black-sesame-toast",
   "scale": {
