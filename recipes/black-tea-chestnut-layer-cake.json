@@ -1,0 +1,66 @@
+{
+  "id": "black-tea-chestnut-layer-cake",
+  "category": "cake",
+  "status": "saved",
+  "title": {
+    "zh": "红茶甘纳许栗子奶油蛋糕",
+    "en": "Black Tea Ganache & Chestnut Cream Layer Cake"
+  },
+  "summary": {
+    "zh": "28 × 28 cm 蛋糕片切三片叠层 · 本次成品与烘烤记录",
+    "en": "A 28 × 28 cm cake sheet, cut into three layers · actual bake and finished cake"
+  },
+  "sections": [
+    {
+      "title": {"zh": "红茶蛋糕片", "en": "Black tea cake sheet"},
+      "ingredients": [
+        {"name": {"zh": "鸡蛋", "en": "Eggs"}, "amount": {"zh": "5 个", "en": "5 eggs"}, "quantity": {"value": 5, "unit": "egg", "kind": "whole", "approxGramPerEgg": 50}},
+        {"name": {"zh": "红茶牛奶", "en": "Black tea-infused milk"}, "amount": "60 g", "quantity": {"value": 60, "unit": "g"}},
+        {"name": {"zh": "植物油", "en": "Neutral oil"}, "amount": "50 g", "quantity": {"value": 50, "unit": "g"}},
+        {"name": {"zh": "低筋面粉", "en": "Cake flour"}, "amount": "60 g", "quantity": {"value": 60, "unit": "g"}},
+        {"name": {"zh": "红茶碎", "en": "Finely ground black tea"}, "amount": "4 g", "quantity": {"value": 4, "unit": "g"}},
+        {"name": {"zh": "细砂糖", "en": "Caster sugar"}, "amount": "45 g", "quantity": {"value": 45, "unit": "g"}, "detail": {"zh": "全部加入蛋白", "en": "All added to the egg whites"}}
+      ]
+    },
+    {
+      "title": {"zh": "红茶白巧克力甘纳许奶油", "en": "Black tea white chocolate whipped ganache"},
+      "ingredients": [
+        {"name": {"zh": "红茶", "en": "Black tea"}, "amount": {"zh": "4–5 g", "en": "4–5 g"}, "quantity": {"min": 4, "max": 5, "unit": "g"}},
+        {"name": {"zh": "浸泡红茶用淡奶油", "en": "Heavy cream for steeping"}, "amount": {"zh": "约 80 g，过滤后取 60 g", "en": "About 80 g; use 60 g after straining"}, "detail": {"zh": "实际配方只使用过滤后的 60 g", "en": "Only the 60 g strained cream goes into the ganache"}},
+        {"name": {"zh": "白巧克力", "en": "White chocolate"}, "amount": "35 g", "quantity": {"value": 35, "unit": "g"}},
+        {"name": {"zh": "冷淡奶油", "en": "Cold heavy cream"}, "amount": "170 g", "quantity": {"value": 170, "unit": "g"}}
+      ]
+    },
+    {
+      "title": {"zh": "栗子奶油", "en": "Chestnut cream"},
+      "ingredients": [
+        {"name": {"zh": "有糖香草栗子泥", "en": "Sweetened vanilla chestnut purée"}, "amount": "50 g", "quantity": {"value": 50, "unit": "g"}},
+        {"name": {"zh": "淡奶油", "en": "Heavy cream"}, "amount": "150 g", "quantity": {"value": 150, "unit": "g"}}
+      ]
+    }
+  ],
+  "steps": [
+    {"zh": "蛋糕片：蛋黄与红茶牛奶、植物油混合，筛入低筋面粉，加入红茶碎；细砂糖 45 g 全部用于打发蛋白，再与蛋黄糊混合。铺入 28 × 28 cm 烤盘。", "en": "Cake sheet: Mix yolks with the black tea milk and oil, sift in the cake flour, and add ground tea. Whip the whites with all 45 g sugar, then fold into the yolk batter. Spread in a 28 × 28 cm pan."},
+    {"zh": "本次实际烘烤：150°C（302°F）30 分钟。放凉后切成三片，叠成蛋糕。", "en": "Actual bake: 150°C (302°F) for 30 minutes. Cool, cut into three pieces, and stack as a layer cake."},
+    {"zh": "甘纳许：用约 80 g 淡奶油浸泡红茶 8–10 分钟，过滤并称取 60 g 红茶奶油；与白巧克力乳化后冷藏。次日加入 170 g 冷淡奶油，打发。无需另加糖。", "en": "Ganache: Steep the tea in about 80 g cream for 8–10 minutes, strain, and weigh out 60 g infused cream. Emulsify with white chocolate and chill. The next day, add 170 g cold cream and whip. No extra sugar."},
+    {"zh": "栗子奶油：把有糖香草栗子泥和 150 g 淡奶油一起打发，用于夹层和装饰。", "en": "Chestnut cream: Whip sweetened vanilla chestnut purée with 150 g cream for filling and decoration."}
+  ],
+  "notes": [
+    {"zh": "这次原想做蛋糕卷，卷制中开裂，改切三片叠层。使用美式燃气烤箱下层，烤箱里还放了另一只烤盘；成品底面偏硬、光滑。下次若重试蛋糕卷，优先观察实际炉温、烤架位置和出炉状态。", "en": "This started as a Swiss roll, but cracked while rolling, so the sheet was cut and stacked in three layers. It baked on a lower rack in a gas oven with another tray inside; the bottom was hard and smooth. For another roll attempt, check the actual oven temperature, rack position, and doneness."},
+    {"zh": "照片为这次三层叠片、栗子奶油裱面的成品。表面栗子块的用量没有记录。", "en": "The photo shows the finished three-layer cake with piped chestnut cream. The amount of chestnut pieces on top was not recorded."}
+  ],
+  "photos": [
+    {
+      "src": "assets/black-tea-chestnut-layer-cake.jpeg",
+      "alt": {"zh": "盒中的红茶栗子奶油叠层蛋糕，表面裱栗子奶油与栗子块", "en": "Black tea chestnut cream layer cake in a box with piped cream and chestnut pieces"},
+      "caption": {"zh": "本次成品 · 三片叠层", "en": "Finished bake · three stacked cake sheets"}
+    }
+  ],
+  "trials": [],
+  "displayStatus": {"zh": "已试做", "en": "Tested"},
+  "scale": {
+    "type": "batch",
+    "baseYield": {"count": 1, "unit": {"zh": "份原方", "en": "original batch"}},
+    "multipliers": [0.5, 1, 2]
+  }
+}
