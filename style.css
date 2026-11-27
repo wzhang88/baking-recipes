@@ -71,6 +71,10 @@ details[open] summary::after { transform: rotate(225deg); margin-top: .3rem; }
 h2 { grid-column: 1 / -1; font-size: clamp(1.3rem, 2vw, 1.7rem); line-height: 1.3; margin: 0; align-self: end; }
 .metadata { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.5; overflow-wrap: anywhere; }
 .recipe-body { border-top: 1px solid var(--line); padding: clamp(1.25rem, 3vw, 2rem); }
+.recipe-photos { margin: 0 0 1.5rem; }
+.recipe-photo { margin: 0; }
+.recipe-photo img { display: block; width: 100%; max-height: 34rem; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .85rem; background: #f5e9e3; }
+.recipe-photo figcaption { margin-top: .55rem; color: var(--muted); font-size: .9rem; }
 .scale-control { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; margin-bottom: 1.6rem; padding: 1rem 1.15rem; background: #fbefeb; border: 1px solid #ead4d0; border-radius: .85rem; }
 .scale-control label { font-weight: 750; }
 .scale-control select { min-width: 10rem; }

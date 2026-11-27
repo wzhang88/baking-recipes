@@ -148,6 +148,19 @@ function renderStructured(recipe, lang) {
   labels.append(status);
   summary.replaceChildren(labels, node('h2', localized(data.title, lang)), node('p', localized(data.summary, lang), 'metadata'));
 
+  const photos = node('div', null, 'recipe-photos');
+  for (const photo of data.photos || []) {
+    const figure = node('figure', null, 'recipe-photo');
+    const img = node('img');
+    img.src = photo.src;
+    img.alt = localized(photo.alt, lang);
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    figure.append(img);
+    if (photo.caption) figure.append(node('figcaption', localized(photo.caption, lang)));
+    photos.append(figure);
+  }
+
   const columns = node('div', null, 'columns');
   const ingredients = node('div');
   const method = node('div');
@@ -177,11 +190,11 @@ function renderStructured(recipe, lang) {
   }
   columns.append(ingredients, method);
   const control = scaleControl(recipe, lang);
-  body.replaceChildren(...(control ? [control, columns] : [columns]));
+  body.replaceChildren(...(photos.childElementCount ? [photos] : []), ...(control ? [control, columns] : [columns]));
 }
 
 async function loadRecipeData() {
-  const manifestResponse = await fetch('recipes/index.json?v=5');
+  const manifestResponse = await fetch('recipes/index.json?v=6');
   if (!manifestResponse.ok) throw new Error('Could not load recipe index');
   const manifest = await manifestResponse.json();
   if (manifest.version !== 1 || !Array.isArray(manifest.ids) || new Set(manifest.ids).size !== manifest.ids.length) {
@@ -189,7 +202,7 @@ async function loadRecipeData() {
   }
   const data = await Promise.all(manifest.ids.map(async id => {
     if (!/^[a-z0-9-]+$/.test(id)) throw new Error(`Invalid recipe ID: ${id}`);
-    const response = await fetch(`recipes/${id}.json?v=5`);
+    const response = await fetch(`recipes/${id}.json?v=6`);
     if (!response.ok) throw new Error(`Could not load ${id}`);
     const recipe = await response.json();
     if (recipe.id !== id || !recipe.displayStatus?.zh || !recipe.displayStatus?.en) {
