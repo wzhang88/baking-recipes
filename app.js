@@ -202,7 +202,7 @@ async function loadRecipeData() {
   }
   const data = await Promise.all(manifest.ids.map(async id => {
     if (!/^[a-z0-9-]+$/.test(id)) throw new Error(`Invalid recipe ID: ${id}`);
-    const response = await fetch(`recipes/${id}.json?v=6`);
+    const response = await fetch(`recipes/${id}.json?v=7`);
     if (!response.ok) throw new Error(`Could not load ${id}`);
     const recipe = await response.json();
     if (recipe.id !== id || !recipe.displayStatus?.zh || !recipe.displayStatus?.en) {
